@@ -1,0 +1,3196 @@
+/* ----------------------------------------------start Topbar-------------------------------------------------------- */
+.topvarbg-navy {
+  background-color: #f2e9e8;
+}
+.text-salmon {
+  color: #f47b6a;
+}
+.topbar-follow {
+  position: relative;
+  padding-right: 2.65rem;
+}
+.custom-blue {
+  color: #13295c;
+}
+.topbar-follow::before {
+  content: "\2192";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-56%);
+  font-size: 2.95rem;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(19, 41, 92, 0.75) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.topbar-social-dot {
+  --bg: rgba(19, 41, 92, 0.12);
+  --border: rgba(19, 41, 92, 0.22);
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: #13295c;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.topbar-social-dot:hover,
+.topbar-social-dot:focus-visible {
+  --bg: #fff;
+  --border: #f47b6a;
+  color: #f47b6a;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.topbar .list-unstyled {
+  flex-wrap: nowrap;
+}
+
+.topbar .list-unstyled li {
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .topbar-follow {
+    padding-right: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 1.5rem;
+    right: -0.2rem;
+  }
+
+  .social-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .topbar .container {
+    gap: 0.25rem;
+    flex-wrap: nowrap;
+  }
+
+  .topbar .list-unstyled {
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .topbar .list-unstyled li {
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .topbar .list-unstyled li span {
+    font-size: 0.6rem;
+  }
+
+  .topbar .list-unstyled li i {
+    font-size: 0.7rem;
+  }
+
+  .topbar .list-unstyled li .fw-semibold.text-salmon {
+    display: none;
+  }
+
+  .topbar .list-unstyled li .gap-2 {
+    gap: 0.25rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .topbar-follow {
+    padding-right: 2.2rem;
+    font-size: 0.9rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 2.2rem;
+  }
+
+  .social-dot {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .topbar {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+  }
+
+  .topbar-follow {
+    padding-right: 2.65rem;
+    font-size: 1rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 2.95rem;
+  }
+
+  .social-dot {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .topbar .container {
+    gap: 2rem;
+  }
+
+  .topbar .list-unstyled {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topbar .container {
+    gap: 3rem;
+  }
+
+  .topbar .list-unstyled {
+    gap: 3rem;
+  }
+
+  .social-dot {
+    width: 36px;
+    height: 36px;
+  }
+
+  .topbar-follow::before {
+    font-size: 3.2rem;
+  }
+}
+/* ----------------------------------------------End Topbar-------------------------------------------------------- */
+
+/* ----------------------------------------------start Navbar-------------------------------------------------------- */
+.bg-navy {
+  background-color: #0e2248;
+}
+.topbar {
+  position: relative !important;
+  z-index: 1020 !important;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.has-fixed-nav {
+  padding-top: var(--nav-height, 72px);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  filter: invert(1) grayscale(1);
+}
+.navbar-toggler {
+  border: 1px solid #fff !important;
+  box-shadow: none !important;
+}
+.navbar.nav-dark .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.navbar.nav-dark .nav-link:hover,
+.navbar.nav-dark .nav-link:focus {
+  color: #f47b6a;
+  text-decoration: none;
+}
+.navbar.nav-dark .nav-link.active {
+  color: #f47b6a;
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+  }
+  .nav-item.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(8px);
+    transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+  }
+  .dropdown-submenu:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  .navbar .dropdown-menu-dark {
+    background-color: #343a40;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 12rem;
+  }
+  .navbar .dropdown-menu-dark .dropdown-item {
+    padding: 10px 20px;
+  }
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu-dark .dropdown-item:focus {
+  color: #f47b6a;
+  background-color: rgba(244, 123, 106, 0.1);
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu-dark .dropdown-item {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  will-change: opacity, transform;
+}
+.navbar .dropdown-menu-dark.show .dropdown-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover > .dropdown-menu-dark .dropdown-item,
+  .dropdown-submenu:hover > .dropdown-menu-dark .dropdown-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 150px;
+}
+
+.nav-pod {
+  position: relative;
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+.nav-pod::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.nav-pod .navbar-nav > .nav-item + .nav-item {
+  margin-left: 1.25rem;
+}
+
+@media (max-width: 991.98px) {
+  .nav-pod {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 20px;
+  }
+  .nav-pod::before {
+    inset: 8px;
+  }
+  .nav-pod .navbar-nav {
+    align-items: stretch;
+  }
+  .nav-pod .navbar-nav > .nav-item + .nav-item {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+
+  .navbar .dropdown-menu,
+  .navbar .dropdown-menu-dark {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0.25rem 0 0;
+  }
+
+  .navbar .dropdown-menu .dropdown-item {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+  .navbar .dropdown-menu .dropdown-item::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f47b6a;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.navbar.nav-dark .dropdown-toggle::after {
+  margin-left: 0.35rem;
+  vertical-align: 0.15em;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+  }
+
+  .navbar .dropdown-submenu .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+  }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.dropdown-submenu .dropdown-menu.show {
+  display: block;
+}
+.dropdown-submenu .dropdown-toggle::after {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-submenu > .dropdown-menu {
+    position: static;
+    float: none;
+    left: auto;
+    top: auto;
+    margin: 0.25rem 0 0.5rem 1rem;
+    display: none;
+    box-shadow: none;
+    border: 0;
+  }
+  .dropdown-submenu > .dropdown-menu.show {
+    display: block;
+  }
+}
+
+.btn-icon {
+  --ring: rgba(255, 255, 255, 0.07);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--ring);
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px var(--ring);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.btn-icon:hover {
+  color: #f47b6a;
+  border-color: rgba(244, 123, 106, 0.5);
+  box-shadow: inset 0 0 0 4px rgba(244, 123, 106);
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+.btn-icon:focus-visible {
+  outline: 3px solid #f47b6a;
+  outline-offset: 2px;
+}
+
+.btn-cta {
+  position: relative;
+  background: #f47b6a;
+  color: #fff;
+  border: 0;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 24px rgba(244, 123, 106, 0.28);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+.btn-cta::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+  z-index: 2;
+}
+.btn-cta:hover,
+.btn-cta:focus-visible {
+  background: #fff;
+  color: #f47b6a;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(244, 123, 106, 0.4);
+}
+.btn-cta:hover::after {
+  left: 0;
+}
+.btn-cta:hover::before {
+  border-color: #f47b6a;
+}
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1320px;
+  }
+}
+.header-zigzag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  background: url("../img/svg/zigzag.svg") repeat-x 0 0;
+  pointer-events: none;
+}
+
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1320px;
+  }
+}
+.k-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(88vw, 360px);
+  height: 100dvh;
+  background: #0f2346;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.25);
+  z-index: 1055;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.k-sidebar[aria-hidden="false"] {
+  transform: translateX(0);
+}
+
+.k-sidebar__close {
+  align-self: flex-end;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  opacity: 0.9;
+}
+.k-sidebar__close:hover {
+  opacity: 1;
+}
+
+.k-sidebar__title {
+  margin: 6px 0 8px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.k-sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.k-sidebar__list li {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 600;
+}
+
+.k-sidebar-dim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+  z-index: 1050;
+}
+.k-sidebar-dim.is-on {
+  opacity: 1;
+  visibility: visible;
+}
+
+.body--kLock {
+  overflow: hidden;
+}
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.search-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-close-overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #f47b6a;
+  font-size: 1.25rem;
+  transition: background 0.2s;
+}
+.btn-close-overlay:hover,
+.btn-close-overlay:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+}
+.search-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #f47b6a;
+}
+
+.text-coral {
+  color: #f47b6a;
+}
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------------------------End Navbar-------------------------------------------------------- */
+
+/* ====================== kindergartenS1 (Hero) ====================== */
+.kindergartenS1 {
+  position: relative;
+  overflow: hidden;
+  margin-top: -1%;
+  margin-bottom: -15%;
+  background: #fff;
+}
+
+.kindergartenS1hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.kindergartenS1-content {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  z-index: 3;
+  color: #0f2a51;
+}
+
+.kindergartenS1-ringWrap {
+  position: absolute;
+  right: -30%;
+  bottom: -150px;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .kindergartenS1-ringWrap {
+    right: -75%;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .kindergartenS1-ringWrap {
+    right: -75%;
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kindergartenS1-ringWrap {
+    right: -75%;
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .kindergartenS1-ringWrap {
+    right: -70%;
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kindergartenS1-ringWrap {
+    right: -75%;
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .kindergartenS1-ringWrap {
+    right: -75%;
+    bottom: -30px;
+  }
+}
+
+.kindergartenS1-ring {
+  width: 500px;
+  height: auto;
+  animation: kindergartenS1-spin 25s linear infinite;
+  transform-origin: center;
+}
+
+@media (max-width: 1200px) {
+  .kindergartenS1-ring {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .kindergartenS1-ring {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kindergartenS1-ring {
+    width: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .kindergartenS1-ring {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kindergartenS1-ring {
+    width: 180px;
+  }
+}
+
+@media (max-width: 360px) {
+  .kindergartenS1-ring {
+    width: 150px;
+  }
+}
+
+@keyframes kindergartenS1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----------------------------------------------Start KindergartenS2 Section-------------------------------------------------------- */
+
+.kindergartenS2-section {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 50px;
+}
+
+body,
+html {
+  overflow-x: visible;
+}
+
+.kindergartenS2-section .container {
+  overflow: visible;
+  margin-top: 10%;
+}
+
+.kindergartenS2-scalloped-border {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 40px 40px,
+    #fffaf9 40px,
+    transparent 41px
+  );
+  background-size: 80px 80px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
+
+.kindergartenS2-section {
+  --kindergartenS2-ink: #0e2340;
+  --kindergartenS2-muted: #6b7a90;
+  --kindergartenS2-primary: #ff746d;
+  --kindergartenS2-pill: #fdf0ee;
+  --kindergartenS2-surface: #fff5f2;
+
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: visible;
+  background: #ffffff url("../img/aboutUs/abs1overlay.png") center/cover
+    no-repeat;
+}
+
+.kindergartenS2-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      1200px 420px at 50% -10%,
+      rgba(255, 245, 242, 0.75),
+      rgba(255, 245, 242, 0) 60%
+    ),
+    radial-gradient(
+      1200px 420px at 50% 110%,
+      rgba(255, 245, 242, 0.75),
+      rgba(255, 245, 242, 0) 60%
+    );
+  pointer-events: none;
+}
+
+.kindergartenS2-eyebrow {
+  color: #ff8b7f;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.kindergartenS2-eyebrow span {
+  margin: 0 0.25rem;
+}
+.kindergartenS2-title {
+  color: var(--kindergartenS2-ink);
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(1.7rem, 1.15rem + 2.2vw, 2.8rem);
+}
+.kindergartenS2-desc {
+  color: var(--kindergartenS2-muted);
+  text-align: justify;
+}
+
+.kindergartenS2-content {
+  position: relative;
+  min-height: 100px;
+}
+
+.aboutus-content {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.aboutus-content.fade-out {
+  opacity: 0;
+}
+
+.aboutus-content.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kindergartenS2-pill {
+  appearance: none;
+  border: 1.5px solid rgba(14, 35, 64, 0.25);
+  background: #fff;
+  color: var(--kindergartenS2-ink);
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+.kindergartenS2-pill:hover {
+  transform: translateY(-2px);
+  background: var(--kindergartenS2-primary);
+  border-color: var(--kindergartenS2-primary);
+  color: #fff;
+}
+.kindergartenS2-pill.is-active {
+  background: var(--kindergartenS2-primary);
+  border-color: var(--kindergartenS2-primary);
+  color: #fff;
+}
+
+.kindergartenS2-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  color: var(--kindergartenS2-ink);
+}
+.kindergartenS2-feat-ico {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.kindergartenS2-cta {
+  --shadow: rgba(244, 123, 106, 0.25);
+  background: var(--kindergartenS2-primary);
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 800;
+  box-shadow: 0 10px 26px var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.kindergartenS2-cta:hover {
+  transform: translateY(-3px);
+  background: #ff5a50;
+  box-shadow: 0 14px 32px var(--shadow);
+}
+
+.kindergartenS2-call-ico img {
+  width: 36px;
+  height: 36px;
+}
+.kindergartenS2-call-num {
+  color: var(--kindergartenS2-ink);
+  font-weight: 800;
+}
+.kindergartenS2-call-sub {
+  color: var(--kindergartenS2-muted);
+  font-size: 0.9rem;
+}
+
+.kindergartenS2-collage {
+  width: min(520px, 95%);
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.kindergartenS2-diamond {
+  position: absolute;
+  margin: 0;
+  width: 56%;
+  aspect-ratio: 1/1;
+  transform: rotate(45deg);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(14, 35, 64, 0.12);
+}
+.kindergartenS2-diamond img {
+  width: 180%;
+  height: 180%;
+  object-fit: cover;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+.kindergartenS2-d1 {
+  right: 30%;
+  top: -2%;
+  width: 40%;
+}
+.kindergartenS2-d2 {
+  right: -2%;
+  bottom: 30%;
+  width: 40%;
+}
+.kindergartenS2-d3 {
+  left: 16%;
+  bottom: 14%;
+  width: 40%;
+}
+.kindergartenS2-deco {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.kindergartenS2-deco--plane {
+  left: -6%;
+  top: 30%;
+  width: 160px;
+}
+.kindergartenS2-deco--dots {
+  left: 1%;
+  top: 45%;
+  width: 48px;
+}
+.kindergartenS2-deco--like {
+  right: 21%;
+  bottom: 7%;
+  width: 130px;
+}
+
+.kindergartenS2-overlay {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.kindergartenS2--left {
+  left: 230%;
+  top: 5%;
+  width: 110px;
+}
+.kindergartenS2--right {
+  right: -135%;
+  bottom: 10%;
+  width: 110px;
+}
+
+.js-kindergartenS2-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kindergartenS2-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .kindergartenS2-collage {
+    margin-inline: auto;
+  }
+  .kindergartenS2-deco--plane {
+    left: -2%;
+    top: 30%;
+  }
+  .kindergartenS2-deco--like {
+    right: 21%;
+    bottom: 8%;
+  }
+}
+@media (max-width: 575.98px) {
+  .kindergartenS2-diamond {
+    border-radius: 22px;
+  }
+  .kindergartenS2-overlay {
+    display: none;
+  }
+  .kindergartenS2-deco--plane {
+    left: -2%;
+    top: 30%;
+    width: 30%;
+  }
+  .kindergartenS2-deco--like {
+    right: 19%;
+    bottom: 1%;
+  }
+}
+/* ----------------------------------------------End kindergartenS2 3002-------------------------------------------------------- */
+
+/* ----------------------------------------------Start kindergartenS3 3003-------------------------------------------------------- */
+.kindergartenS3-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  position: relative;
+  z-index: -2;
+  overflow: visible;
+}
+.kindergartenS3-title {
+  color: #ffffff;
+  font-weight: 800;
+}
+.kindergartenS3-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.kindergartenS3-bg {
+  --au4-coral: #142551;
+  --au4-coral-2: #142551;
+  position: relative;
+  padding: 3.25rem 0;
+
+  color: #fff;
+  background: conic-gradient(
+      from 180deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 15deg,
+      rgba(255, 255, 255, 0) 15deg 30deg
+    ),
+    conic-gradient(
+      from 200deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 12deg,
+      rgba(255, 255, 255, 0) 12deg 24deg
+    ),
+    linear-gradient(90deg, var(--au4-coral) 0%, var(--au4-coral-2) 100%);
+  overflow: visible;
+}
+.kindergartenS3-subtitle {
+  margin-top: 10%;
+}
+
+.kindergartenS3-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 42px;
+  z-index: 1;
+  background: radial-gradient(
+        circle at 20px 21px,
+        #142551 20px,
+        transparent 21px
+      )
+      0 0/80px 42px repeat-x,
+    radial-gradient(circle at 60px 21px, #142551 20px, transparent 21px) 0 0/80px
+      42px repeat-x;
+}
+.kindergartenS3-bg::before {
+  top: -21px;
+}
+.kindergartenS3-bg::after {
+  bottom: -21px;
+}
+
+.kindergartenS3-stat {
+  position: relative;
+  z-index: 2;
+  padding: 0.5rem 0;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.kindergartenS3-stat:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+.kindergartenS3-ico {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 0.35rem;
+}
+.kindergartenS3-ico img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.kindergartenS3-num {
+  font-weight: 800;
+  font-size: clamp(1.6rem, 1rem + 2.2vw, 2.4rem);
+  line-height: 1;
+  letter-spacing: 0.3px;
+}
+.kindergartenS3-label {
+  opacity: 0.95;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.kindergartenS3-class-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 300px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kindergartenS3-class-card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 12px;
+  border: 2px dotted #d1d5db;
+  pointer-events: none;
+  transition: transform 0.6s ease;
+}
+
+.kindergartenS3-class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.kindergartenS3-class-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kindergartenS3-class-icon img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.kindergartenS3-class-title {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.kindergartenS3-class-time {
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.js-kindergartenS3-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kindergartenS3-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .kindergartenS3-bg {
+    padding: 2.25rem 0;
+  }
+
+  .kindergartenS3-class-card {
+    padding: 1.5rem 0.75rem;
+    height: 180px;
+  }
+
+  .kindergartenS3-class-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.75rem;
+  }
+
+  .kindergartenS3-class-title {
+    font-size: 1rem;
+  }
+
+  .kindergartenS3-class-time {
+    font-size: 0.85rem;
+  }
+}
+
+.kindergartenS3-bg-img {
+  position: absolute;
+  top: -4%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.05;
+  overflow: hidden;
+}
+
+.kindergartenS3-bg-img img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
+}
+
+.kindergartenS3-bear {
+  position: absolute;
+  top: 23%;
+  left: 90%;
+  width: 8%;
+  z-index: 0;
+  opacity: 2;
+  overflow: hidden;
+}
+/* ----------------------------------------------end kindergartenS3 3004-------------------------------------------------------- */
+
+/* ----------------------------------------------Start kindergartenS4 3004-------------------------------------------------------- */
+.kindergartenS4-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  position: relative;
+  z-index: -4;
+}
+.kindergartenS4-left {
+  position: absolute;
+  left: 10%;
+  top: 8%;
+  width: 110px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.kindergartenS4-right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+@media (max-width: 575.98px) {
+  .kindergartenS4-left {
+    left: 10%;
+    top: 7%;
+    width: 70px;
+  }
+  .kindergartenS4-right {
+    display: none;
+  }
+}
+.kindergartenS4 {
+  border-radius: 1rem;
+  overflow: visible;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.6s ease;
+  position: relative;
+  margin-top: 60px;
+  border: 1px solid #e2dada;
+}
+
+.kindergartenS4::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 2px dashed #e2dada;
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+.kindergartenS4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.kindergartenS4-body {
+  position: absolute;
+  bottom: -50px;
+  width: 60%;
+  margin: 0 auto;
+  left: 15px;
+  right: 15px;
+  background: #fff5f4;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #ffd4d4;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.kindergartenS4-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.kindergartenS4-text {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.kindergartenS4.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ----------------------------------------------End kindergartenS4 3004-------------------------------------------------------- */
+/* ----------------------------------------------Start kindergartenS5 3006-------------------------------------------------------- */
+
+.kindergartenS5 {
+  --ks5-ink: #0e2a55;
+  --ks5-body: #6b7487;
+  --ks5-accent: #ff7f72;
+  --ks5-accent-2: #ffaf9f;
+  --ks5-soft: #fde7e2;
+  color: var(--ks5-ink);
+}
+
+.kindergartenS5-eyebrow {
+  color: #ff9a87;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.kindergartenS5-star {
+  color: #ff6b57;
+  margin-right: 0.35rem;
+}
+.kindergartenS5-title {
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+}
+.kindergartenS5-text {
+  color: var(--ks5-body);
+  max-width: 36rem;
+}
+
+.kindergartenS5-media {
+  border-radius: 18px;
+  overflow: visible;
+  isolation: isolate;
+}
+.kindergartenS5-media::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -36px;
+  width: 120px;
+  height: 120px;
+  background: var(--ks5-soft);
+  border-radius: 50%;
+  z-index: -1;
+}
+.kindergartenS5-media::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: -26px;
+  width: 140px;
+  height: 140px;
+  border: 2px dashed #ffb6a8;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.kindergartenS5-img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(14, 42, 85, 0.12);
+  object-fit: cover;
+}
+
+.kindergartenS5-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.kindergartenS5-playTriangle {
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+}
+.kindergartenS5-playBg {
+  fill: #ffffff;
+}
+.kindergartenS5-playIcon {
+  fill: #0e2a55;
+}
+
+.kindergartenS5-spinText {
+  position: absolute;
+  inset: 0;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  pointer-events: none;
+}
+.kindergartenS5-spinCopy {
+  font: 700 9px/1 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  fill: #0e2a55;
+}
+.kindergartenS5-spinRing {
+  transform-origin: 60px 60px;
+  animation: kindergartenS5-rotate 8s linear infinite;
+}
+@keyframes kindergartenS5-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.kindergartenS5-play:hover .kindergartenS5-spinRing,
+.kindergartenS5-play:focus-visible .kindergartenS5-spinRing {
+  animation-play-state: paused;
+}
+
+.kindergartenS5-io {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform, opacity;
+}
+.kindergartenS5-io.kindergartenS5-in {
+  opacity: 1;
+  transform: none;
+}
+.kindergartenS5-out-left {
+  opacity: 0;
+  transform: translateX(-24px);
+}
+.kindergartenS5-out-up {
+  opacity: 0;
+  transform: translateY(-24px);
+}
+
+@media (max-width: 991.98px) {
+  .kindergartenS5-media::after {
+    right: -22px;
+    bottom: -18px;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .kindergartenS5-play {
+    width: 96px;
+    height: 96px;
+  }
+  .kindergartenS5-spinText {
+    width: 96px;
+    height: 96px;
+  }
+  .kindergartenS5-spinCopy {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kindergartenS5-io {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .kindergartenS5-spinRing {
+    animation: none;
+  }
+}
+
+.kindergartenS5-playBlur {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+  pointer-events: none;
+  animation: ks5Pulse 3.6s ease-in-out infinite;
+}
+@keyframes ks5Pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.kindergartenS5-play {
+  z-index: 2;
+}
+
+.kindergartenS5-video {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: grid;
+  place-items: center;
+  z-index: 1050;
+}
+.kindergartenS5-video[hidden] {
+  display: none;
+}
+
+.kindergartenS5-videoWrap {
+  width: min(90vw, 960px);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+.kindergartenS5-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.kindergartenS5-videoClose {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #111;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+.kindergartenS5-videoClose:hover,
+.kindergartenS5-videoClose:focus-visible {
+  background: #f2f3f5;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kindergartenS5-playBlur {
+    animation: none;
+  }
+}
+
+/* ----------------------------------------------End kindergartenS5 3006-------------------------------------------------------- */
+
+.kindergartenS5-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: none;
+  place-items: center;
+  z-index: 1050;
+  padding: 16px;
+}
+.kindergartenS5-modal[aria-hidden="false"] {
+  display: grid;
+}
+.kindergartenS5-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+.kindergartenS5-modal__dialog {
+  position: relative;
+  width: min(90vw, 960px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.kindergartenS5-iframewrap {
+  width: min(90vw, 960px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.kindergartenS5-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.kindergartenS5-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+.kindergartenS5-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+.kindergartenS5-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.kindergartenS6-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+.kindergartenS9-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .kindergartenS9-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kindergartenS9-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .kindergartenS9-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .kindergartenS9-grid {
+    max-width: 280px;
+    gap: 0.875rem;
+  }
+}
+
+/* ====================== start kindergartenS6  ====================== */
+.kindergartenS6-eyebrow {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.kindergartenS6-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .kindergartenS6-eyebrow {
+    font-size: 16px;
+  }
+
+  .kindergartenS6-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.kindergartenS6-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.kindergartenS6-bg {
+  --au4-coral: #ff7162;
+  --au4-coral-2: #ff7162;
+  position: relative;
+  padding: 3.25rem 0;
+  color: #fff;
+  background: conic-gradient(
+      from 180deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 15deg,
+      rgba(255, 255, 255, 0) 15deg 30deg
+    ),
+    conic-gradient(
+      from 200deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 12deg,
+      rgba(255, 255, 255, 0) 12deg 24deg
+    ),
+    linear-gradient(90deg, var(--au4-coral) 0%, var(--au4-coral-2) 100%);
+  overflow: visible;
+}
+
+.kindergartenS6-bg::before,
+.kindergartenS6-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 42px;
+  z-index: 1;
+  background: radial-gradient(
+        circle at 20px 21px,
+        #ff7162 20px,
+        transparent 21px
+      )
+      0 0/80px 42px repeat-x,
+    radial-gradient(circle at 60px 21px, #ff7162 20px, transparent 21px) 0 0/80px
+      42px repeat-x;
+}
+.kindergartenS6-bg::before {
+  top: -21px;
+}
+.kindergartenS6-bg::after {
+  bottom: -21px;
+}
+
+.kindergartenS6-program-card {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0;
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kindergartenS6-program-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kindergartenS6-program-card {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.kindergartenS6-program-card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 3px dotted #ff7162;
+  pointer-events: none;
+  transition: transform 0.6s ease;
+}
+
+.kindergartenS6-program-card:hover::before {
+  transform: rotate(360deg);
+}
+
+.kindergartenS6-grade-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.kindergartenS6-program-card:hover .kindergartenS6-grade-circle {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  background: #2c3e50 !important;
+}
+
+.kindergartenS6-grade-circle.grade-1,
+.kindergartenS6-grade-circle.grade-2,
+.kindergartenS6-grade-circle.grade-4 {
+  background: #ff7162;
+}
+
+.kindergartenS6-grade-circle.grade-3 {
+  background: #2c3e50;
+}
+
+.kindergartenS6-grade-num {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.kindergartenS6-grade-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.kindergartenS6-age-range {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.js-kindergartenS6-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kindergartenS6-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .kindergartenS6-bg {
+    padding: 2.25rem 0;
+  }
+
+  .kindergartenS6-program-card {
+    width: 160px;
+    height: 160px;
+    padding: 1rem;
+  }
+
+  .kindergartenS6-program-card::before {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .kindergartenS6-grade-circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .kindergartenS6-grade-num {
+    font-size: 0.65rem;
+  }
+
+  .kindergartenS6-grade-title {
+    font-size: 1rem;
+  }
+
+  .kindergartenS6-age-range {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kindergartenS6-program-card {
+    width: 140px;
+    height: 140px;
+    padding: 0.75rem;
+  }
+
+  .kindergartenS6-program-card::before {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+  }
+
+  .kindergartenS6-grade-circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .kindergartenS6-grade-num {
+    font-size: 0.6rem;
+  }
+}
+/* ----------------------------------------------End KindergartenS6 3005-------------------------------------------------------- */
+/* ----------------------------------------------Start kindergartenS7 3006-------------------------------------------------------- */
+
+.kindergartenS7-section {
+  --kindergartenS7-primary: #ff746d;
+  --kindergartenS7-muted: #6b7a90;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  background: #fff;
+}
+
+.kindergartenS7-eyebrow {
+  color: #ff8b7f;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.kindergartenS7-eyebrow span {
+  margin: 0 0.25rem;
+}
+.kindergartenS7-title {
+  color: #0e2340;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: clamp(1.7rem, 1.2rem + 3vw, 3rem);
+}
+
+.kindergartenS7-card {
+  border-radius: 16px;
+  background: #fff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.6s ease;
+  transform: translateY(18px);
+  opacity: 0;
+}
+.kindergartenS7-card:focus-within {
+  outline: 2px dashed var(--kindergartenS7-primary);
+  outline-offset: 3px;
+}
+.kindergartenS7-media img {
+  display: block;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.kindergartenS7-card:hover .kindergartenS7-media img {
+  transform: scale(1.05);
+}
+
+.kindergartenS7-badge {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  background: var(--kindergartenS7-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+
+  z-index: 2;
+}
+.kindergartenS7-badgeBG {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #ff746d;
+  color: #fff;
+  font-weight: 800;
+  border: 5px solid #fff5f4;
+  z-index: 2;
+}
+.kindergartenS7-body {
+  border: 1px solid #f0f2f6;
+  border-top: none;
+  border-radius: 16px 16px 16px 16px;
+  background: #fff5f4;
+  padding-top: 2.25rem !important;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+.kindergartenS7-name {
+  color: #38465a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.kindergartenS7-desc {
+  color: var(--kindergartenS7-muted);
+  line-height: 1.55;
+  font-size: 0.95rem;
+  text-align: center;
+}
+@keyframes kindergartenS7-pop {
+  0% {
+    transform: translateX(-50%) scale(0.85);
+  }
+  60% {
+    transform: translateX(-50%) scale(1.05);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+.kindergartenS7-card:hover .kindergartenS7-badge {
+  animation: kindergartenS7-pop 0.45s both;
+}
+.pg-dotted {
+  border: 0;
+  border-top: 2px dotted rgb(255, 43, 43);
+  margin: 1rem 0;
+  width: 90%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kindergartenS7-meta .kindergartenS7-meta-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--kindergartenS7-muted);
+}
+.kindergartenS7-meta .kindergartenS7-meta-value {
+  font-size: 0.9rem;
+  color: #ff9286;
+  font-weight: 600;
+}
+.kindergartenS7-btn-primary {
+  --bs-btn-bg: var(--kindergartenS7-primary);
+  --bs-btn-border-color: var(--kindergartenS7-primary);
+  --bs-btn-hover-bg: #ff5a50;
+  --bs-btn-hover-border-color: #ff5a50;
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  border-radius: 999px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.kindergartenS7-card:hover .kindergartenS7-btn-primary {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.kindergartenS7-card.kindergartenS7-visible {
+  opacity: 1;
+  transform: none;
+}
+.kindergartenS7-card:hover {
+  box-shadow: 0 18px 46px rgba(14, 35, 64, 0.14);
+}
+
+.js-kindergartenS7-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.kindergartenS7-revealed {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .kindergartenS7-badge {
+    margin-top: -20px;
+    width: 58px;
+    height: 58px;
+  }
+}
+/* ----------------------------------------------End kindergartenS7 3006-------------------------------------------------------- */
+/* ============================================  Start kindergartenS8 5006 =============================== */
+:root {
+  --tx-bg: #fff7f4;
+  --tx-navy: #0c2340;
+  --tx-muted: #6f7a8a;
+  --tx-accent: #ff6b5b;
+}
+
+.kindergartenS8-section {
+  position: relative;
+  background: var(--tx-bg);
+  padding: 64px 0;
+  overflow: hidden;
+}
+
+.kindergartenS8-wrap {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .kindergartenS8-wrap {
+    grid-template-columns: 520px 1fr;
+    gap: 56px;
+  }
+}
+
+.kindergartenS8-quote {
+  margin: 0;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-width: 560px;
+}
+
+.kindergartenS8-kicker {
+  margin: 0 0 8px;
+  color: var(--tx-muted);
+  font-weight: 700;
+  font-size: 14px;
+}
+.kindergartenS8-kicker span {
+  color: var(--tx-accent);
+  margin-right: 8px;
+}
+.kindergartenS8-title {
+  margin: 0 0 14px;
+  color: var(--tx-navy);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.2;
+}
+.kindergartenS8-quote-text {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #7b869a;
+  max-width: 560px;
+}
+.kindergartenS8-stars {
+  color: #f35c3f;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin: 4px 0 16px;
+}
+.kindergartenS8-arrow {
+  left: 160px;
+  top: 110px;
+  width: 52px;
+  opacity: 0.9;
+}
+.kindergartenS8-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.kindergartenS8-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.kindergartenS8-name {
+  text-transform: capitalize;
+  color: #f07a66;
+  font-weight: 700;
+  font-size: 14px;
+}
+.kindergartenS8-role {
+  color: #9aa4b8;
+  font-size: 12px;
+}
+
+.kindergartenS8-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.kindergartenS8-scribble {
+  left: 32px;
+  top: 46%;
+  width: 120px;
+  opacity: 0.55;
+  transform: rotate(-12deg);
+}
+
+.kindergartenS8-sticker-top {
+  right: 36px;
+  top: 24px;
+  width: 60px;
+  transform: rotate(-8deg);
+}
+
+.kindergartenS8-sticker-mid {
+  right: 280px;
+  top: 52%;
+  width: 68px;
+  transform: rotate(10deg);
+}
+
+.kindergartenS8-blob-right {
+  right: -40px;
+  bottom: -20px;
+  width: 360px;
+  opacity: 0.22;
+}
+
+.kindergartenS8-kid-right {
+  right: 70px;
+  bottom: 30px;
+  width: 200px;
+}
+
+@media (max-width: 1023px) {
+  .kindergartenS8-scribble {
+    left: 20px;
+    bottom: 80px;
+    width: 80px;
+  }
+  .kindergartenS8-sticker-top {
+    right: 14px;
+    top: 16px;
+    width: 48px;
+    opacity: 0.8;
+  }
+  .kindergartenS8-sticker-mid {
+    right: 14px;
+    bottom: 16px;
+    width: 48px;
+    opacity: 0.8;
+  }
+  .kindergartenS8-main {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  .kindergartenS8-kid-right {
+    right: 24px;
+    bottom: 18px;
+    width: 100px;
+    opacity: 0.85;
+  }
+  .kindergartenS8-title {
+    font-size: 28px;
+  }
+  .kindergartenS8-arrow {
+    left: 50px;
+    top: 80px;
+    width: 40px;
+  }
+}
+/* =================================================End kindergartenS8 5006 =============================== */
+
+/* ============================================  Start kindergartenS9 5005 =============================== */
+
+.kindergartenS9-section {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.kindergartenS9-eyebrow {
+  color: #ff8b7f;
+}
+.kindergartenS9-title {
+  color: #18243b;
+  font-weight: 800;
+}
+
+.kindergartenS9-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  justify-items: center;
+}
+@media (max-width: 1200px) {
+  .kindergartenS9-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .kindergartenS9-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .kindergartenS9-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kindergartenS9-card {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  background: #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 10px 28px rgba(24, 36, 59, 0.08);
+}
+.kindergartenS9-card:hover {
+  transform: scale(1.03);
+}
+
+.kindergartenS9-card:hover + .kindergartenS9-teacher-info:before {
+  transform: scale(21);
+}
+
+.kindergartenS9-card:hover + .kindergartenS9-teacher-info {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 116, 109, 0.3);
+}
+
+.kindergartenS9-card:hover
+  + .kindergartenS9-teacher-info
+  .kindergartenS9-teacher-name {
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+.kindergartenS9-card:hover
+  + .kindergartenS9-teacher-info
+  .kindergartenS9-teacher-title {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.kindergartenS9-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.02);
+}
+
+.kindergartenS9-box {
+  position: absolute;
+  padding: 10px 12px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.38);
+  border-top: 2px solid #fff;
+  border-right: 1px solid #fff;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.36) -7px 7px 29px 0;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+}
+.kindergartenS9-card:hover .kindergartenS9-box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.kindergartenS9-box1 {
+  width: 85%;
+  height: 85%;
+  bottom: -85%;
+  left: -85%;
+}
+.kindergartenS9-box2 {
+  width: 65%;
+  height: 65%;
+  bottom: -65%;
+  left: -65%;
+  transition-delay: 0.2s;
+}
+.kindergartenS9-box3 {
+  width: 45%;
+  height: 45%;
+  bottom: -45%;
+  left: -45%;
+  transition-delay: 0.4s;
+}
+.kindergartenS9-box4 {
+  width: 25%;
+  height: 25%;
+  bottom: -25%;
+  left: -25%;
+  transition-delay: 0.6s;
+}
+
+.kindergartenS9-social {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+}
+.kindergartenS9-svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+.kindergartenS9-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.kindergartenS9-box1::before {
+  background: linear-gradient(135deg, #1877f2 0%, #0e5ec9 100%);
+}
+.kindergartenS9-box1:hover::before {
+  opacity: 0.4;
+}
+
+.kindergartenS9-box2::before {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.kindergartenS9-box2:hover::before {
+  opacity: 0.4;
+}
+
+.kindergartenS9-box3::before {
+  background: linear-gradient(135deg, #1da1f2 0%, #0d8edb 100%);
+}
+.kindergartenS9-box3:hover::before {
+  opacity: 0.4;
+}
+
+.kindergartenS9-box4::before {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+.kindergartenS9-box4:hover::before {
+  opacity: 0.4;
+}
+
+.kindergartenS9-box:hover .kindergartenS9-svg {
+  fill: #fff;
+}
+
+.kindergartenS9-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kindergartenS9-teacher-info {
+  position: relative;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  background: #fff7f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.kindergartenS9-teacher-info:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #ff746d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.8s ease-out;
+}
+
+.kindergartenS9-teacher-info:hover:before {
+  transform: scale(21);
+}
+
+.kindergartenS9-teacher-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 116, 109, 0.3);
+}
+
+.kindergartenS9-teacher-info:hover .kindergartenS9-teacher-name {
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+.kindergartenS9-teacher-info:hover .kindergartenS9-teacher-title {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.kindergartenS9-teacher-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #18243b;
+  margin: 0 0 4px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.kindergartenS9-teacher-title {
+  font-size: 0.9rem;
+  color: #ff8b7f;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================================================= End kindergartenS9 5005 =============================== */
+
+.kindergartenS10-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+.kindergartenS10-title {
+  color: #ffffff;
+  font-weight: 800;
+}
+.kindergartenS10-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.kindergartenS10-bg {
+  --au4-coral: #142551;
+  --au4-coral-2: #142551;
+  position: relative;
+  padding: 3.25rem 0;
+  color: #fff;
+  background: conic-gradient(
+      from 180deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 15deg,
+      rgba(255, 255, 255, 0) 15deg 30deg
+    ),
+    conic-gradient(
+      from 200deg at 50% 100%,
+      rgba(255, 255, 255, 0.08) 0 12deg,
+      rgba(255, 255, 255, 0) 12deg 24deg
+    ),
+    linear-gradient(90deg, var(--au4-coral) 0%, var(--au4-coral-2) 100%);
+  overflow: visible;
+}
+
+.kindergartenS10-bg::before,
+.kindergartenS10-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 42px;
+  z-index: 1;
+  background: radial-gradient(
+        circle at 20px 21px,
+        #142551 20px,
+        transparent 21px
+      )
+      0 0/80px 42px repeat-x,
+    radial-gradient(circle at 60px 21px, #142551 20px, transparent 21px) 0 0/80px
+      42px repeat-x;
+}
+.kindergartenS10-bg::before {
+  top: -21px;
+}
+.kindergartenS10-bg::after {
+  bottom: -21px;
+}
+
+.kindergartenS10-stat {
+  position: relative;
+  z-index: 2;
+  padding: 0.5rem 0;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.kindergartenS10-stat:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+.kindergartenS10-ico {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 0.35rem;
+}
+.kindergartenS10-ico img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.kindergartenS10-num {
+  font-weight: 800;
+  font-size: clamp(1.6rem, 1rem + 2.2vw, 2.4rem);
+  line-height: 1;
+  letter-spacing: 0.3px;
+}
+.kindergartenS10-label {
+  opacity: 0.95;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.js-kindergartenS10-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kindergartenS10-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .kindergartenS10-bg {
+    padding: 2.25rem 0;
+  }
+  .callusimg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.callusimg,
+.rightkidimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 575.98px) {
+  .kindergartenS10-content .btn {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+.kindergartenS10-bg-img {
+  position: absolute;
+  top: 7.5%;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  z-index: 0;
+  opacity: 0.02;
+  overflow: hidden;
+}
+
+.kindergartenS10-ellipses {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------End kindergartenS10 1010-------------------------------------------------------- */
+
+/* ----------------------------------------------Start kindergartenS11 1010-------------------------------------------------------- */
+.kindergartenS11-section {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.kindergartenS11-eyebrow {
+  color: #ff8b7f;
+}
+.kindergartenS11-titlem {
+  color: #18243b;
+  font-weight: 800;
+}
+.py-60 {
+  padding: 60px 0;
+}
+
+.kindergartenS11-container {
+  width: min(1160px, 92%);
+  margin: 0 auto;
+  position: relative;
+}
+
+.kindergartenS11-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 28px;
+}
+@media (min-width: 768px) {
+  .kindergartenS11-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .kindergartenS11-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.kindergartenS11-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+.kindergartenS11-card:hover {
+  transform: scale(1.05);
+}
+.kindergartenS11-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.kindergartenS11-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.kindergartenS11-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.kindergartenS11-body {
+  padding: 16px 18px 10px;
+  background: #f9f5f4;
+}
+
+.kindergartenS11-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+.kindergartenS11-meta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kindergartenS11-title {
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  color: #0c2340;
+  font-weight: 700;
+}
+.kindergartenS11-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.kindergartenS11-title a:hover {
+  text-decoration: underline;
+}
+
+.kindergartenS11-excerpt {
+  font-size: 12.5px;
+  color: #7b8597;
+  margin: 0 0 14px;
+}
+
+.kindergartenS11-btn {
+  display: block;
+  text-align: center;
+  background: #0d2a57;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 0 0 12px 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+.kindergartenS11-btn:hover {
+  background: #ff7162;
+  color: #fff;
+}
+
+.kindergartenS11-overlay {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.kindergartenS11-overlay--left {
+  left: 10%;
+  top: -5%;
+  width: 110px;
+}
+.kindergartenS11-overlay--right {
+  right: 10%;
+  top: -5%;
+  width: 110px;
+}
+@media (max-width: 575.98px) {
+  .kindergartenS11-overlay--left {
+    display: none;
+  }
+  .kindergartenS11-overlay--right {
+    display: none;
+  }
+}
+/* ----------------------------------------------End kindergarten S11 3010-------------------------------------------------------- */
+
+.footx {
+  background: #0e2248;
+  color: #fff;
+  position: relative;
+  padding-top: 3.75rem;
+  padding-bottom: 2rem;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.035) 0 2px,
+    transparent 2px 10px
+  );
+}
+
+.footx-scallop {
+  position: absolute;
+  top: -69px;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 5;
+  background-image: url("../img/svg/FooterTop.svg");
+  background-size: 120px 70px;
+  background-repeat: repeat-x;
+}
+
+.footx-title {
+  font-size: clamp(1.5rem, 1rem + 2.2vw, 2.15rem);
+  letter-spacing: 0.2px;
+}
+
+.footx-subscribe-wrap {
+  position: relative;
+  max-width: 1000px;
+}
+.footx-subscribe {
+  position: relative;
+}
+.footx-input {
+  width: 100%;
+  height: 60px;
+  border-radius: 999px;
+  border: 0;
+  background: #ffecea;
+  padding: 0 7.5rem 0 1.25rem;
+  color: #0e2248;
+}
+.footx-input::placeholder {
+  color: rgba(14, 34, 72, 0.65);
+}
+.footx-input:focus {
+  outline: 2px solid #f47b6a;
+}
+
+.footx-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 48px;
+  border-radius: 999px;
+  border: 0;
+  padding: 0 1.1rem;
+  background: #f47b6a;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 24px rgba(244, 123, 106, 0.28);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  z-index: 1;
+}
+.footx-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+.footx-btn::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+  z-index: 2;
+}
+.footx-btn:hover,
+.footx-btn:focus-visible {
+  background: #fff;
+  color: #f47b6a;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 12px 32px rgba(244, 123, 106, 0.4);
+  outline: none;
+}
+.footx-btn:hover::after {
+  left: 0;
+}
+.footx-btn:hover::before {
+  border-color: #f47b6a;
+}
+
+.text-salmon {
+  color: #f47b6a !important;
+}
+.footx-muted {
+  color: rgba(255, 255, 255, 0.82);
+}
+.footx-link {
+  color: #fff;
+  text-decoration: none;
+}
+.footx-link:hover {
+  text-decoration: underline;
+}
+
+.footx-bullet {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.footx-social {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  text-decoration: none;
+}
+.footx-social:hover {
+  filter: brightness(1.1);
+}
+
+.footx-igram img {
+  display: block;
+  border-radius: 0.55rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.footx-igram:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-dot {
+  --bg: rgba(255, 255, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.22);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: #fff;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+.social-dot:hover,
+.social-dot:focus-visible {
+  --bg: #fff;
+  --border: #fff;
+  color: #f47b6a;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(244, 123, 106, 0.3);
+  outline: none;
+}
+
+.footx-hr {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.footx-vic {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+.footx-vic--cloud {
+  left: 10px;
+  bottom: 100px;
+  width: 90px;
+  opacity: 0.9;
+}
+.footx-vic--rainbow {
+  right: 100px;
+  top: 10px;
+  width: 160px;
+  opacity: 0.9;
+}
+.footx-vic--arrow {
+  position: absolute;
+  left: -126px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+}
+
+@media (max-width: 991.98px) {
+  .footx {
+    padding-top: 2.75rem;
+  }
+  .footx-vic--rainbow {
+    display: none;
+  }
+  .footx-vic--cloud {
+    left: 18px;
+    bottom: 120px;
+    width: 72px;
+  }
+  .footx-btn {
+    right: 6px;
+    height: 46px;
+  }
+  .footx-input {
+    height: 56px;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .footx-vic--arrow {
+    left: 50%;
+    top: 200%;
+    width: 36px;
+  }
+}

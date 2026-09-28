@@ -1,0 +1,2641 @@
+/* ----------------------------------------------start Topbar-------------------------------------------------------- */
+
+.topvarbg-navy {
+  background-color: #f2e9e8;
+}
+.text-salmon {
+  color: #f47b6a;
+}
+.topbar-follow {
+  position: relative;
+  padding-right: 2.65rem;
+}
+.custom-blue {
+  color: #13295c;
+}
+.topbar-follow::before {
+  content: "\2192";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-56%);
+  font-size: 2.95rem;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(19, 41, 92, 0.75) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.social-dot {
+  --bg: rgba(19, 41, 92, 0.12);
+  --border: rgba(19, 41, 92, 0.22);
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: #13295c;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+.social-dot:hover,
+.social-dot:focus-visible {
+  --bg: #fff;
+  --border: #f47b6a;
+  color: #f47b6a;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.topbar .list-unstyled {
+  flex-wrap: nowrap;
+}
+
+.topbar .list-unstyled li {
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .topbar-follow {
+    padding-right: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 1.5rem;
+    right: -0.2rem;
+  }
+
+  .social-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .topbar .container {
+    gap: 0.25rem;
+    flex-wrap: nowrap;
+  }
+
+  .topbar .list-unstyled {
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .topbar .list-unstyled li {
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .topbar .list-unstyled li span {
+    font-size: 0.6rem;
+  }
+
+  .topbar .list-unstyled li i {
+    font-size: 0.7rem;
+  }
+
+  .topbar .list-unstyled li .fw-semibold.text-salmon {
+    display: none;
+  }
+
+  .topbar .list-unstyled li .gap-2 {
+    gap: 0.25rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .topbar-follow {
+    padding-right: 2.2rem;
+    font-size: 0.9rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 2.2rem;
+  }
+
+  .social-dot {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .topbar {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+  }
+
+  .topbar-follow {
+    padding-right: 2.65rem;
+    font-size: 1rem;
+  }
+
+  .topbar-follow::before {
+    font-size: 2.95rem;
+  }
+
+  .social-dot {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .topbar .container {
+    gap: 2rem;
+  }
+
+  .topbar .list-unstyled {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topbar .container {
+    gap: 3rem;
+  }
+
+  .topbar .list-unstyled {
+    gap: 3rem;
+  }
+
+  .social-dot {
+    width: 36px;
+    height: 36px;
+  }
+
+  .topbar-follow::before {
+    font-size: 3.2rem;
+  }
+}
+/* ----------------------------------------------End Topbar-------------------------------------------------------- */
+
+/* ----------------------------------------------start Navbar-------------------------------------------------------- */
+.bg-navy {
+  background-color: #0e2248;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  filter: invert(1) grayscale(1);
+}
+.navbar-toggler {
+  border: 1px solid #fff !important;
+  box-shadow: none !important;
+}
+.navbar.nav-dark .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.navbar.nav-dark .nav-link:hover,
+.navbar.nav-dark .nav-link:focus {
+  color: #f47b6a;
+  text-decoration: none;
+}
+.navbar.nav-dark .nav-link.active {
+  color: #f47b6a;
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+  }
+  .nav-item.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(8px);
+    transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+  }
+  .dropdown-submenu:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  .navbar .dropdown-menu-dark {
+    background-color: #343a40;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 12rem;
+  }
+  .navbar .dropdown-menu-dark .dropdown-item {
+    padding: 10px 20px;
+  }
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu-dark .dropdown-item:focus {
+  color: #f47b6a;
+  background-color: rgba(244, 123, 106, 0.1);
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu-dark .dropdown-item {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  will-change: opacity, transform;
+}
+.navbar .dropdown-menu-dark.show .dropdown-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover > .dropdown-menu-dark .dropdown-item,
+  .dropdown-submenu:hover > .dropdown-menu-dark .dropdown-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 150px;
+}
+
+.nav-pod {
+  position: relative;
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+.nav-pod::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.nav-pod .navbar-nav > .nav-item + .nav-item {
+  margin-left: 1.25rem;
+}
+
+@media (max-width: 991.98px) {
+  .nav-pod {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 20px;
+  }
+  .nav-pod::before {
+    inset: 8px;
+  }
+  .nav-pod .navbar-nav {
+    align-items: stretch;
+  }
+  .nav-pod .navbar-nav > .nav-item + .nav-item {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+
+  .navbar .dropdown-menu,
+  .navbar .dropdown-menu-dark {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0.25rem 0 0;
+  }
+
+  .navbar .dropdown-menu .dropdown-item {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+  .navbar .dropdown-menu .dropdown-item::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f47b6a;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.navbar.nav-dark .dropdown-toggle::after {
+  margin-left: 0.35rem;
+  vertical-align: 0.15em;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+  }
+
+  .navbar .dropdown-submenu .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+  }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.dropdown-submenu .dropdown-menu.show {
+  display: block;
+}
+.dropdown-submenu .dropdown-toggle::after {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-submenu > .dropdown-menu {
+    position: static;
+    float: none;
+    left: auto;
+    top: auto;
+    margin: 0.25rem 0 0.5rem 1rem;
+    display: none;
+    box-shadow: none;
+    border: 0;
+  }
+  .dropdown-submenu > .dropdown-menu.show {
+    display: block;
+  }
+}
+
+.btn-icon {
+  --ring: rgba(255, 255, 255, 0.07);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--ring);
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px var(--ring);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.btn-icon:hover {
+  color: #f47b6a;
+  border-color: rgba(244, 123, 106, 0.5);
+  box-shadow: inset 0 0 0 4px rgba(244, 123, 106);
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+.btn-icon:focus-visible {
+  outline: 3px solid #f47b6a;
+  outline-offset: 2px;
+}
+
+.btn-cta {
+  position: relative;
+  background: #f47b6a;
+  color: #fff;
+  border: 0;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 24px rgba(244, 123, 106, 0.28);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+.btn-cta::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+  z-index: 2;
+}
+.btn-cta:hover,
+.btn-cta:focus-visible {
+  background: #fff;
+  color: #f47b6a;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(244, 123, 106, 0.4);
+}
+.btn-cta:hover::after {
+  left: 0;
+}
+.btn-cta:hover::before {
+  border-color: #f47b6a;
+}
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1320px;
+  }
+}
+.header-zigzag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  background: url("../img/svg/zigzag.svg") repeat-x 0 0;
+  pointer-events: none;
+}
+
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1320px;
+  }
+}
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.search-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-close-overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #f47b6a;
+  font-size: 1.25rem;
+  transition: background 0.2s;
+}
+.btn-close-overlay:hover,
+.btn-close-overlay:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+}
+.search-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #f47b6a;
+}
+
+.text-coral {
+  color: #f47b6a;
+}
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------------------------End Navbar-------------------------------------------------------- */
+
+/* =======================================  Start Pre School S1 3001======================================= */
+
+.preschoolS1 {
+  --ps1-navy: #0f2346;
+  --ps1-ink: #0e2442;
+  --ps1-muted: #61708a;
+  --ps1-coral: #ff6d62;
+  --ps1-cream: #fff4f2;
+
+  background: repeating-linear-gradient(
+      90deg,
+      rgba(255, 109, 98, 0.06) 0 2px,
+      transparent 2px 40px
+    ),
+    #fff4f3;
+  position: relative;
+  overflow: hidden;
+}
+
+.preschoolS1-row {
+  min-height: clamp(560px, 82vh, 820px);
+  padding-block: clamp(32px, 6vw, 72px);
+}
+
+.preschoolS1-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid #ffe3e0;
+  color: var(--ps1-navy);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.preschoolS1-spark {
+  color: var(--ps1-coral);
+}
+
+.preschoolS1-title {
+  color: var(--ps1-ink);
+  font-weight: 900;
+  line-height: 1.1;
+  font-size: clamp(34px, 5.4vw, 60px);
+  letter-spacing: 0.2px;
+}
+.preschoolS1-accent {
+  color: var(--ps1-coral);
+}
+
+.preschoolS1-lead {
+  color: var(--ps1-muted);
+  max-width: 52ch;
+}
+
+.preschoolS1-btn {
+  background: var(--ps1-navy);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.9rem 1.25rem;
+  text-decoration: none;
+  font-weight: 800;
+  border: 1.5px dashed rgba(255, 255, 255, 0.4);
+  transition: transform 0.15s ease, background-color 0.25s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 12px 24px rgba(15, 35, 70, 0.18);
+}
+.preschoolS1-btn:hover {
+  transform: translateY(-2px);
+  background: #1a3667;
+}
+
+.preschoolS1-visual {
+  min-height: 420px;
+}
+
+.preschoolS1-circle {
+  position: relative;
+  width: min(520px, 90%);
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  border-radius: 999px;
+  padding: 14px;
+  background: radial-gradient(
+    120% 120% at 20% 20%,
+    #ff937f 0,
+    #ff6d62 40%,
+    #ff6d62 60%,
+    #ff937f 100%
+  );
+  box-shadow: 0 18px 40px rgba(255, 109, 98, 0.25);
+}
+.preschoolS1-circle img {
+  border-radius: 999px;
+  background: #ddd;
+  display: block;
+}
+
+.preschoolS1-clover {
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  width: 132px;
+  height: 132px;
+}
+.preschoolS1-cloverLeaf {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+.preschoolS1-cloverLeaf:nth-child(1) {
+  left: 0;
+  top: 34px;
+}
+.preschoolS1-cloverLeaf:nth-child(2) {
+  right: 0;
+  top: 34px;
+}
+.preschoolS1-cloverLeaf:nth-child(3) {
+  left: 34px;
+  top: 0;
+}
+.preschoolS1-cloverLeaf:nth-child(4) {
+  left: 34px;
+  bottom: 0;
+}
+.preschoolS1-cloverText {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--ps1-ink);
+}
+.preschoolS1-cloverNum {
+  font-weight: 900;
+  font-size: 26px;
+}
+.preschoolS1-cloverLabel {
+  font-size: 12px;
+  color: #7a8aa3;
+}
+
+.preschoolS1-diamond {
+  position: absolute;
+  right: 6%;
+  bottom: -14px;
+  width: 150px;
+  aspect-ratio: 1/1;
+  transform: rotate(45deg);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  border: 6px solid #e7eef9;
+}
+.preschoolS1-diamond img {
+  transform: rotate(-45deg) scale(1.06);
+}
+
+.preschoolS1-path {
+  position: absolute;
+  left: 40%;
+  top: 58%;
+  width: 320px;
+  height: 100px;
+  opacity: 0.9;
+}
+.preschoolS1-plane {
+  position: absolute;
+  left: 49%;
+  top: 57%;
+  width: 28px;
+  height: auto;
+  transform: rotate(8deg);
+  filter: drop-shadow(0 6px 10px rgba(255, 109, 98, 0.25));
+}
+
+.preschoolS1--js .preschoolS1-anim {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition: opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+.preschoolS1--js .preschoolS1-anim[data-anim="left"] {
+  transform: translate3d(-28px, 0, 0);
+}
+.preschoolS1--js .preschoolS1-anim[data-anim="right"] {
+  transform: translate3d(28px, 0, 0);
+}
+.preschoolS1--js .preschoolS1-anim[data-anim="up"] {
+  transform: translate3d(0, 26px, 0);
+}
+.preschoolS1--js .preschoolS1-anim[data-anim="down"] {
+  transform: translate3d(0, -26px, 0);
+}
+
+.preschoolS1--js .preschoolS1-anim.is-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.preschoolS1--js .preschoolS1-anim.is-out {
+  opacity: 0;
+  transform: translate3d(-14px, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS1--js .preschoolS1-anim {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .preschoolS1-row {
+    padding-block: 48px;
+  }
+  .preschoolS1-diamond {
+    right: 2%;
+    width: 120px;
+    bottom: -12px;
+  }
+  .preschoolS1-clover {
+    top: -12px;
+    right: 0;
+    transform: scale(0.9);
+    transform-origin: top right;
+  }
+  .preschoolS1-circle {
+    margin-inline: auto;
+  }
+  .preschoolS1-path {
+    left: 46%;
+    width: 260px;
+  }
+  .preschoolS1-plane {
+    left: 55%;
+  }
+}
+/* =======================================  End Pre School S1 3001======================================= */
+/* =======================================  Start Pre School S2 3002======================================= */
+.preschoolS2 {
+  --ps2-navy: #0f2346;
+  --ps2-coral: #ff6d62;
+  --ps2-muted: #70809a;
+  background: #fff;
+  padding-block: clamp(60px, 9vw, 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+.preschoolS2-eyebrow {
+  background: transparent;
+  color: var(--ps2-navy);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.preschoolS2-spark {
+  color: var(--ps2-coral);
+  font-size: 1.1rem;
+}
+.preschoolS2-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: var(--ps2-navy);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-top: 1rem;
+}
+
+.preschoolS2-card {
+  background: transparent;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.preschoolS2-card:hover {
+  transform: scale(1.05);
+}
+
+.preschoolS2-imgWrap {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 6px;
+  background: transparent;
+}
+
+.preschoolS2-imgWrap img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS2-imgWrap::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.preschoolS2-cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ps2-navy);
+}
+.preschoolS2-cardText {
+  font-size: 0.9rem;
+  color: var(--ps2-muted);
+  line-height: 1.5;
+}
+
+.preschoolS2-girl {
+  position: absolute;
+  right: -5%;
+  bottom: 1%;
+  width: 10%;
+  transform: translateY(10%);
+}
+.preschoolS2-girl img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.preschoolS2--js .preschoolS2-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.preschoolS2--js .preschoolS2-anim.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.preschoolS2--js .preschoolS2-anim.is-out {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS2--js .preschoolS2-anim {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* =======================================  End Pre School S2 3002======================================= */
+/* =======================================  Start Pre School S3 3003======================================= */
+
+.preschoolS3 {
+  --ps3-navy: #0f2346;
+  --ps3-ink: #e9eef8;
+  --ps3-white: #ffffff;
+  --ps3-muted: #bfc8d7;
+  --ps3-coral: #ff6d62;
+
+  background: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      rgba(255, 255, 255, 0) 1px 15px
+    ),
+    var(--ps3-navy);
+  color: var(--ps3-ink);
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(60px, 8vw, 50px);
+}
+
+.preschoolS3-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ps3-white);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.preschoolS3-spark {
+  color: var(--ps3-coral);
+}
+
+.preschoolS3-title {
+  color: var(--ps3-white);
+  font-weight: 900;
+  font-size: clamp(28px, 4.2vw, 46px);
+  line-height: 1.18;
+  margin-top: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.preschoolS3-lead {
+  color: var(--ps3-muted);
+  max-width: 56ch;
+  margin-bottom: 1.25rem;
+}
+
+.preschoolS3-collage {
+  position: relative;
+  width: min(640px, 100%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: clamp(14px, 3vw, 26px);
+  row-gap: clamp(16px, 3vw, 24px);
+}
+
+.preschoolS3-card--tall {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  width: 100%;
+}
+.preschoolS3-card--tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS3-circle {
+  grid-column: 2;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+.preschoolS3-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS3-circle::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+.preschoolS3-circle--bottom {
+  align-self: end;
+}
+
+.preschoolS3-features {
+  margin: 1rem 0 1.25rem;
+}
+.preschoolS3-feature {
+  display: grid;
+  grid-template-columns: 56px auto;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+.preschoolS3-featureIcon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffd5cf;
+  border: 2px dashed rgba(255, 255, 255, 0.35);
+  font-size: 1.2rem;
+}
+.preschoolS3-featureTitle {
+  color: var(--ps3-white);
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0;
+}
+.preschoolS3-featureText {
+  color: var(--ps3-muted);
+  font-size: 0.95rem;
+  margin: 0.125rem 0 0;
+}
+
+.preschoolS3-thumb {
+  width: 130px;
+  height: 90px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.preschoolS3-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS3-logos {
+  margin-top: clamp(20px, 5vw, 50px) !important;
+}
+.preschoolS3-logoCell {
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+  padding: clamp(16px, 3vw, 28px);
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.preschoolS3--js .preschoolS3-anim {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition: opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+.preschoolS3--js .preschoolS3-anim[data-anim="left"] {
+  transform: translate3d(-28px, 0, 0);
+}
+.preschoolS3--js .preschoolS3-anim[data-anim="right"] {
+  transform: translate3d(28px, 0, 0);
+}
+.preschoolS3--js .preschoolS3-anim[data-anim="up"] {
+  transform: translate3d(0, 26px, 0);
+}
+.preschoolS3--js .preschoolS3-anim[data-anim="down"] {
+  transform: translate3d(0, -26px, 0);
+}
+
+.preschoolS3--js .preschoolS3-anim.is-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.preschoolS3--js .preschoolS3-anim.is-out {
+  opacity: 0;
+  transform: translate3d(-14px, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS3--js .preschoolS3-anim {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .preschoolS3-content {
+    text-align: left;
+  }
+  .preschoolS3-thumb {
+    display: none;
+  }
+  .preschoolS3-collage {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* =======================================  End Pre School S3 3003======================================= */
+/* =======================================  Start Pre School S4 3004======================================= */
+.preschoolS4-section {
+  --preschoolS4-ink: #18243b;
+  --preschoolS4-muted: #6b7a90;
+  --preschoolS4-primary: #ff746d;
+  --preschoolS4-soft: #fff1ee;
+
+  font-family: "Inter", sans-serif;
+  position: relative;
+  background: #fff;
+}
+
+.preschoolS4-deco {
+  position: absolute;
+  left: 0;
+  top: 18%;
+  width: 110px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.preschoolS4-eyebrow {
+  color: #ff8b7f;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.preschoolS4-eyebrow span {
+  margin: 0 0.25rem;
+}
+
+.preschoolS4-title {
+  color: var(--preschoolS4-ink);
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(1.6rem, 1.1rem + 2.1vw, 2.4rem);
+}
+
+.preschoolS4-card {
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  background: var(--preschoolS4-soft);
+  border: 1px solid #f1d8d3;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(24, 36, 59, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  transform: translateY(18px);
+  opacity: 0;
+}
+.preschoolS4-card .preschoolS4-card-inner {
+  padding: 2.2rem 1.6rem;
+  position: relative;
+}
+.preschoolS4-card::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 2px dashed #e7c5bf;
+  border-radius: 14px;
+  pointer-events: none;
+}
+.preschoolS4-card:hover {
+  box-shadow: 0 16px 38px rgba(24, 36, 59, 0.1);
+}
+
+.preschoolS4-icon {
+  width: 86px;
+  height: 86px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+.preschoolS4-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.preschoolS4-card-title {
+  color: var(--preschoolS4-ink);
+  font-weight: 800;
+  margin-bottom: 0.15rem;
+  font-size: 1.2rem;
+}
+.preschoolS4-age {
+  color: var(--preschoolS4-ink);
+  font-weight: 700;
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+.preschoolS4-card-desc {
+  color: var(--preschoolS4-muted);
+  max-width: 28ch;
+  margin: 0 auto 1.2rem;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px) scale(1.05) !important;
+  background: #ff5a50 !important;
+}
+
+.preschoolS4-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 575.98px) {
+  .preschoolS4-deco {
+    width: 60px;
+    top: 7%;
+    left: 10%;
+  }
+  .preschoolS4-card .preschoolS4-card-inner {
+    padding: 1.7rem 1.2rem;
+  }
+}
+/* =======================================  End Pre School S4 3004======================================= */
+/* =======================================  Start Pre School S5 3005======================================= */
+
+.preschoolS5-section {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.preschoolS5-subtitle {
+  color: #ff6b5a;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.preschoolS5-title {
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.preschoolS5-desc {
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.preschoolS5-card {
+  background: #fff1ee;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.5rem 0.75rem;
+  transition: all 0.3s ease;
+  border: 2px dashed rgba(255, 107, 90, 0.3);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.preschoolS5-card:hover,
+.preschoolS5-card.active {
+  background: #0d1b2a;
+  color: #fff;
+  border-color: #0d1b2a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.preschoolS5-card img {
+  width: 56px;
+  margin-bottom: 1rem;
+}
+
+.preschoolS5-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.preschoolS5-image-wrap {
+  position: relative;
+}
+
+.preschoolS5-main-img {
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #ffd4d4;
+  display: inline-block;
+}
+
+.preschoolS5-main-img::after {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border: 2px dashed #ffc6c6;
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.preschoolS5-main-photo {
+  border-radius: 20px;
+  display: block;
+}
+.preschoolS5-sub-photo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.preschoolS5-sub-photo.sub1 {
+  top: 8%;
+  right: 10%;
+}
+
+.preschoolS5-sub-photo.sub2 {
+  bottom: 8%;
+  left: 10%;
+}
+
+.preschoolS5-card,
+.preschoolS5-main-img {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.preschoolS5-card.visible,
+.preschoolS5-main-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .preschoolS5-section {
+    text-align: center;
+  }
+  .preschoolS5-sub-photo.sub1,
+  .preschoolS5-sub-photo.sub2 {
+    display: none;
+  }
+}
+/* =======================================  End Pre School S5 3005======================================= */
+/* =======================================  Start Pre School S6 3006======================================= */
+:root {
+  --px-card: #fff5f4;
+  --px-stroke: #e2dada;
+  --px-navy: #0c2340;
+  --px-muted: #77839a;
+  --px-accent: #ff6b5b;
+}
+
+.preschoolS6-section {
+  position: relative;
+  background: #fff5f4;
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+.preschoolS6-wrap {
+  width: min(1160px, 92%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.preschoolS6-kicker {
+  margin: 0 0 10px;
+  color: var(--px-muted);
+  font-weight: 700;
+  font-size: 14px;
+}
+.preschoolS6-kicker span {
+  color: var(--px-accent);
+  margin-right: 6px;
+}
+.preschoolS6-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--px-navy);
+}
+
+.preschoolS6-toggle {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 22px 0 36px;
+}
+.preschoolS6-pill {
+  background: #f0f0f0;
+  color: var(--px-navy);
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.preschoolS6-pill:hover {
+  background: #e8e8e8;
+}
+.preschoolS6-active {
+  background: var(--px-accent);
+  color: #fff;
+}
+
+.preschoolS6-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+@media (min-width: 1000px) {
+  .preschoolS6-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.preschoolS6-card {
+  position: relative;
+  background: var(--px-card);
+  border-radius: 18px;
+  text-align: left;
+  padding: 28px;
+  color: var(--px-navy);
+  border: 1px solid var(--px-stroke);
+  transition: transform 0.3s ease;
+}
+.preschoolS6-card:hover {
+  transform: translateY(-6px);
+}
+.preschoolS6-card::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 2px dotted var(--px-stroke);
+  border-radius: 14px;
+  pointer-events: none;
+}
+.preschoolS6-featured {
+  background: var(--px-accent);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 107, 91, 0.25);
+}
+.preschoolS6-featured::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  pointer-events: none;
+}
+.preschoolS6-plan {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.preschoolS6-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.preschoolS6-amount {
+  font-size: 40px;
+  font-weight: 800;
+}
+.preschoolS6-suffix {
+  color: var(--px-muted);
+  font-weight: 600;
+}
+.preschoolS6-featured .preschoolS6-suffix {
+  color: #ffe8e5;
+}
+
+.preschoolS6-rule {
+  margin: 18px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+.preschoolS6-featured .preschoolS6-rule-light {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.preschoolS6-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  gap: 10px;
+}
+.preschoolS6-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.preschoolS6-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--px-accent);
+  font-size: 13px;
+}
+.preschoolS6-featured .preschoolS6-list li {
+  color: #fff;
+}
+.preschoolS6-featured .preschoolS6-list li::before {
+  color: #fff;
+}
+
+.preschoolS6-btn {
+  position: relative;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px;
+  border-radius: 30px;
+  background: #0e2248;
+  color: #fff;
+  border: 1px solid #0e2248;
+}
+.preschoolS6-btn::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 2px dotted rgba(255, 255, 255, 0.3);
+  border-radius: 22px;
+  pointer-events: none;
+}
+.preschoolS6-btn-light {
+  background: #fff;
+  color: #0e2248;
+  border: 1px solid #fff;
+}
+.preschoolS6-btn-light::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 2px dotted rgba(14, 34, 72, 0.3);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.preschoolS6-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.preschoolS6-rainbow-left {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-20%) scaleX(-1);
+  width: 120px;
+  opacity: 0.9;
+}
+.preschoolS6-rainbow-right {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-20%);
+  width: 120px;
+  opacity: 0.9;
+}
+.preschoolS6-cycle {
+  left: 20px;
+  bottom: 20px;
+  width: 90px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .preschoolS6-title {
+    font-size: 28px;
+  }
+  .preschoolS6-rainbow-left,
+  .preschoolS6-rainbow-right {
+    opacity: 0.4;
+    width: 80px;
+  }
+  .preschoolS6-cycle {
+    opacity: 0.5;
+    width: 70px;
+  }
+}
+
+/* =======================================  End Pre School S6 3006======================================= */
+/* =======================================  Start Pre School S7 3007======================================= */
+.preschoolS7 {
+  --s7-navy: #102347;
+  --s7-ink: #0e2442;
+  --s7-muted: #6e7f99;
+  --s7-coral: #ff6d62;
+  --s7-cream: #fff2ef;
+
+  background: #fff;
+  padding-block: clamp(56px, 7vw, 96px);
+  position: relative;
+  overflow: hidden;
+}
+
+.preschoolS7-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--s7-ink);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.preschoolS7-spark {
+  color: var(--s7-coral);
+}
+.preschoolS7-title {
+  margin-top: 0.6rem;
+  color: var(--s7-ink);
+  font-weight: 900;
+  font-size: clamp(28px, 4.4vw, 48px);
+}
+
+.preschoolS7-blob {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.12;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.05));
+}
+.preschoolS7-blob--left {
+  left: -10%;
+  top: 32%;
+  transform: translate(-36%, -50%);
+  width: 180px;
+}
+.preschoolS7-blob--right {
+  right: -5%;
+  bottom: -20%;
+  width: 150px;
+}
+
+.preschoolS7-slider {
+  position: relative;
+  margin-top: 10px;
+}
+.preschoolS7-slide {
+  display: none;
+}
+.preschoolS7-slide.is-active {
+  display: block;
+}
+
+.preschoolS7-card {
+  background: var(--s7-cream);
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+  padding: clamp(18px, 2vw, 28px);
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preschoolS7-name {
+  color: var(--s7-ink);
+  font-weight: 900;
+  font-size: clamp(18px, 1.6vw, 28px);
+}
+.preschoolS7-role {
+  color: var(--s7-coral);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.preschoolS7-bars {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+.preschoolS7-bars button {
+  height: 6px;
+  width: 34px;
+  border: none;
+  border-radius: 6px;
+  background: #c9d0df;
+  transition: all 0.25s ease;
+}
+.preschoolS7-bars button.is-on {
+  background: #2f4167;
+  width: 44px;
+}
+
+.preschoolS7-portrait {
+  position: relative;
+  margin: clamp(14px, 2vw, 18px) clamp(10px, 1vw, 14px);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.preschoolS7-portrait img {
+  width: 50%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+.preschoolS7-portrait::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+  bottom: 5px;
+  width: calc(50% - 10px);
+  border: 2px dashed rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.preschoolS7--js .preschoolS7-anim {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.preschoolS7--js .preschoolS7-anim.is-in {
+  opacity: 1;
+  transform: none;
+}
+/* responsive tweaks */
+@media (max-width: 991.98px) {
+  .preschoolS7-blob--right {
+    display: none;
+  }
+}
+
+/* =======================================  End Pre School S7 3007======================================= */
+/* =======================================  Start Pre School S8 3008======================================= */
+.preschoolS8 {
+  --s8-navy: #0a1f58;
+  --s8-card: #ffffff;
+  --s8-ink: #0b204b;
+  --s8-accent: #ff6b57;
+  --s8-accent-2: #ff4e9a;
+  --s8-soft: #eaf0ff;
+
+  position: relative;
+  background: var(--s8-navy);
+  color: #fff;
+  padding: clamp(64px, 7vw, 96px) 0 110px;
+  overflow: hidden;
+}
+
+.preschoolS8:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(transparent 62%, rgba(0, 0, 0, 0.06) 63%),
+    linear-gradient(
+      120deg,
+      transparent 0 70%,
+      rgba(255, 255, 255, 0.03) 70% 100%
+    );
+  background-size: 180px 180px, 260px 260px;
+  background-position: -40px -20px, center;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.preschoolS8-corner {
+  position: absolute;
+  top: 58px;
+  width: 120px;
+  height: 120px;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, var(--s8-accent), var(--s8-accent-2));
+  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.08) inset,
+    12px 12px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 18px;
+  z-index: 0;
+}
+.preschoolS8-corner--left {
+  left: -4%;
+  top: 15%;
+}
+.preschoolS8-corner--right {
+  right: -4%;
+  top: 70%;
+}
+
+.preschoolS8-head {
+  position: relative;
+  z-index: 1;
+}
+.preschoolS8-eyebrow {
+  color: #ffd7d2;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+.preschoolS8-star {
+  color: #ff9ea0;
+  margin-right: 0.35rem;
+}
+.preschoolS8-title {
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.22;
+  margin-bottom: 2.2rem;
+}
+
+.preschoolS8-card {
+  background: var(--s8-card);
+  border-radius: 22px;
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.preschoolS8-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.2);
+}
+
+.preschoolS8-card-media {
+  position: relative;
+  background: #dfe5ea;
+  border: 6px solid #eef0f4;
+  border-radius: 18px;
+  margin: 18px 18px 0;
+  overflow: hidden;
+  aspect-ratio: 4 / 4;
+}
+.preschoolS8-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS8-card-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 26px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 52"><path d="M0,26c60,30,180,30,240,0s180,-30,240,0s180,30,240,0s180,-30,240,0s180,30,240,0s180,-30,240,0V52H0Z" fill="white"/></svg>')
+    center/cover no-repeat;
+  pointer-events: none;
+}
+
+.preschoolS8-card-body {
+  padding: 16px 22px 22px;
+  color: var(--s8-ink);
+}
+.preschoolS8-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+.preschoolS8-role {
+  margin: 0;
+  color: #687085;
+  font-size: 0.92rem;
+}
+
+.preschoolS8-share {
+  position: absolute;
+  right: 22px;
+  bottom: 40px;
+  transform: translateY(50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 0;
+  background: var(--s8-accent, #ff6b6b);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  z-index: 3;
+}
+.preschoolS8-share:hover {
+  transform: translateY(45%) scale(1.06);
+  background: #ff5a43;
+}
+.preschoolS8-shareIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.preschoolS8-shareWrap {
+  position: relative;
+}
+
+.preschoolS8-socials {
+  position: absolute;
+  bottom: 110px;
+  right: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 4;
+}
+
+.preschoolS8-shareWrap:hover .preschoolS8-socials,
+.preschoolS8-socials:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.preschoolS8-shareWrap::after {
+  content: "";
+  position: absolute;
+  right: 22px;
+
+  bottom: calc(40px + 46px * 0.5 - 6px);
+  width: 64px;
+  height: 100px;
+  z-index: 2;
+}
+
+.preschoolS8-socials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--s8-accent, #ff6b6b);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+.preschoolS8-socials a:hover {
+  transform: scale(1.1);
+  background: var(--s8-accent, #ff6b6b);
+  color: #fff;
+}
+
+.preschoolS8-shareWrap:hover .preschoolS8-socials a:nth-child(1) {
+  transition-delay: 0.02s;
+}
+.preschoolS8-shareWrap:hover .preschoolS8-socials a:nth-child(2) {
+  transition-delay: 0.08s;
+}
+.preschoolS8-shareWrap:hover .preschoolS8-socials a:nth-child(3) {
+  transition-delay: 0.14s;
+}
+.preschoolS8-shareWrap:hover .preschoolS8-socials a:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.preschoolS8-bottomEdge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 44" preserveAspectRatio="none"><path d="M0,44L30,0L60,44L90,0L120,44L150,0L180,44L210,0L240,44L270,0L300,44L330,0L360,44L390,0L420,44L450,0L480,44L510,0L540,44L570,0L600,44L630,0L660,44L690,0L720,44L750,0L780,44L810,0L840,44L870,0L900,44L930,0L960,44L990,0L1020,44L1050,0L1080,44L1110,0L1140,44L1170,0L1200,44L1230,0L1260,44L1290,0L1320,44L1350,0L1380,44L1410,0L1440,44Z" fill="white"/></svg>')
+    center/100% 8px no-repeat;
+}
+
+.preschoolS8-io {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.preschoolS8-io.preschoolS8-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 991.98px) {
+  .preschoolS8-corner {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS8-io {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =======================================  End Pre School S8 3008======================================= */
+/* =======================================  Start Pre School S9 3009======================================= */
+.preschoolS9 {
+  background: #ffffff;
+  margin-bottom: 10%;
+}
+
+.preschoolS9-stripWrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0 28px;
+}
+
+.preschoolS9-caption {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+.preschoolS9-handle {
+  color: #ff6b6b;
+}
+
+.preschoolS9-track {
+  display: inline-flex;
+  gap: clamp(18px, 2vw, 28px);
+  align-items: center;
+  will-change: transform;
+}
+
+.preschoolS9-card {
+  --cardW: clamp(180px, 22vw, 260px);
+  width: var(--cardW);
+  aspect-ratio: 4/4;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.preschoolS9-card--r1 {
+  transform: rotate(-9deg);
+}
+.preschoolS9-card--r2 {
+  transform: rotate(9deg);
+}
+.preschoolS9-card--r3 {
+  transform: rotate(-9deg);
+}
+.preschoolS9-card--r4 {
+  transform: rotate(9deg);
+}
+.preschoolS9-card--r5 {
+  transform: rotate(-9deg);
+}
+
+.preschoolS9-card:focus-visible,
+.preschoolS9-card:hover {
+  transform: translateY(-1px) scale(1.02) rotate(var(--angle, 0));
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+  outline: none;
+}
+
+.preschoolS9-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preschoolS9-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.8) 0%,
+    rgba(19, 41, 92, 0.8) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.preschoolS9-igBadge {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.preschoolS9-igIcon {
+  width: 22px;
+  height: 22px;
+  fill: #ff6b6b;
+}
+
+.preschoolS9-card:hover::before,
+.preschoolS9-card:focus-visible::before {
+  opacity: 1;
+}
+
+.preschoolS9-card:hover .preschoolS9-igBadge,
+.preschoolS9-card:focus-visible .preschoolS9-igBadge {
+  opacity: 1;
+}
+
+.preschoolS9-io {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.preschoolS9-io.preschoolS9-in {
+  opacity: 1;
+  transform: none;
+}
+.preschoolS9-out-left {
+  opacity: 0;
+  transform: translateX(-24px);
+}
+.preschoolS9-out-up {
+  opacity: 0;
+  transform: translateY(-24px);
+}
+
+.preschoolS9-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.72);
+  display: grid;
+  place-items: center;
+}
+.preschoolS9-lightbox[hidden] {
+  display: none;
+}
+.preschoolS9-lightbox-img {
+  max-width: min(92vw, 1100px);
+  max-height: 86vh;
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+.preschoolS9-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+  color: #111;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+.preschoolS9-lightbox-close:hover,
+.preschoolS9-lightbox-close:focus-visible {
+  background: #f3f4f6;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS9-io {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =======================================  End Pre School S9 3009======================================= */
+/* =======================================  Start Pre School S10 3009======================================= */
+
+.preschoolS10 {
+  --s10-bg: #ff6f61;
+  --s10-ring1: #ffe2dd;
+  --s10-ring2: #ffd3cd;
+  --s10-text: #ffffff;
+  --s10-ink: #0a2a66;
+  --s10-deco: #ffd6d1;
+  position: relative;
+  background: var(--s10-bg);
+  color: var(--s10-text);
+  overflow: visible;
+  padding: clamp(56px, 7vw, 84px) 0 clamp(36px, 5vw, 60px);
+}
+
+.preschoolS10-scallops {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  top: auto;
+  height: 160px;
+  pointer-events: none;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+.preschoolS10-scallop {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.preschoolS10-scallop--base {
+  transform: translateY(50px);
+}
+.preschoolS10-scallop--base path {
+  fill: #ffe8e6;
+}
+.preschoolS10-scallop--ring1 {
+  transform: translateY(0px);
+}
+.preschoolS10-scallop--ring1 path {
+  fill: #f8958c;
+}
+.preschoolS10-scallop--ring2 {
+  transform: translateY(-50px);
+}
+.preschoolS10-scallop--ring2 path {
+  fill: #ff6f61;
+}
+
+.preschoolS10-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.preschoolS10-eyebrow {
+  font-weight: 600;
+  color: #ffe9e7;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+}
+.preschoolS10-star {
+  color: #1d2a57;
+  margin-right: 0.4rem;
+}
+
+.preschoolS10-title {
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: 0.2px;
+  font-size: clamp(2rem, 5.4vw, 3.6rem);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+}
+
+.preschoolS10-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--s10-ink);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.78rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 9px 22px rgba(10, 42, 102, 0.28),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.18);
+  transition: transform 0.16s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.preschoolS10-cta:hover,
+.preschoolS10-cta:focus-visible {
+  transform: translateY(-1px);
+  background: #103782;
+  box-shadow: 0 12px 28px rgba(10, 42, 102, 0.35),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+.preschoolS10-ctaIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.preschoolS10 > .container {
+  position: static !important;
+}
+
+.preschoolS10 {
+  position: relative;
+  overflow: visible;
+}
+
+.preschoolS10-child {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  z-index: 1;
+  line-height: 0;
+  width: min(34vw, 380px);
+  transform: none;
+}
+
+.preschoolS10-child--left {
+  left: max(-10px, -2vw);
+}
+.preschoolS10-child--right {
+  right: 0;
+}
+
+@media (min-width: 576px) {
+  .preschoolS10-child {
+    bottom: -2px;
+  }
+}
+
+.preschoolS10-child img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: drop-shadow(0 24px 42px rgba(0, 0, 0, 0.18));
+}
+
+.preschoolS10-doodles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.preschoolS10-doodle {
+  position: absolute;
+  opacity: 1;
+  width: 80px;
+  height: auto;
+}
+
+.preschoolS10-doodle--balloon {
+  left: 3%;
+  top: -10%;
+  width: 5%;
+}
+.preschoolS10-doodle--cloud {
+  left: 65%;
+  bottom: 18%;
+}
+.preschoolS10-doodle--pencil {
+  right: 65%;
+  bottom: 18%;
+}
+.preschoolS10-doodle--plane {
+  right: 5%;
+  width: 10%;
+  top: -10%;
+}
+
+.preschoolS10-io {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.preschoolS10-io.preschoolS10-in {
+  opacity: 1;
+  transform: none;
+}
+.preschoolS10-out-up {
+  opacity: 0;
+  transform: translateY(-18px);
+}
+
+@media (max-width: 991.98px) {
+  .preschoolS10-child {
+    width: min(38vw, 300px);
+  }
+  .preschoolS10-doodle--balloon {
+    top: 48%;
+  }
+}
+@media (max-width: 767.98px) {
+  .preschoolS10-title {
+    font-size: clamp(1.9rem, 8vw, 3rem);
+  }
+  .preschoolS10-child {
+    opacity: 0.18;
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preschoolS10-io {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =======================================  End Pre School S10 3009======================================= */
+
+/* =======================================  Start Footer  ======================================== */
+
+.footx {
+  background: #fff5f4;
+  color: #fff;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.035) 0 2px,
+    transparent 2px 10px
+  );
+}
+
+.text-salmon {
+  color: #f47b6a !important;
+}
+.footx-muted {
+  color: rgba(255, 255, 255, 0.82);
+}
+.footx-link {
+  color: #fff;
+  text-decoration: none;
+}
+.footx-link:hover {
+  text-decoration: underline;
+}
+
+.footx-bullet {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.footx-social {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  text-decoration: none;
+}
+.footx-social:hover {
+  filter: brightness(1.1);
+}
+
+.footx-igram img {
+  display: block;
+  border-radius: 0.55rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.footx-igram:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.footx-hr {
+  border-color: #8d7f85;
+}
+
+.footx-vic {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+.footx-vic--cloud {
+  left: 10px;
+  bottom: 100px;
+  width: 90px;
+  opacity: 0.9;
+}
+.footx-vic--rainbow {
+  right: 100px;
+  top: 10px;
+  width: 160px;
+  opacity: 0.9;
+}
+.footx-vic--arrow {
+  position: absolute;
+  left: -80px;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 46px;
+}
+
+.footx-title {
+  color: #0f2346;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.newsletter-description {
+  color: #6b7a90;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  margin-top: 12px;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2dada;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #fff5f4;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #ff6b5b;
+  box-shadow: 0 0 0 2px rgba(255, 107, 91, 0.1);
+}
+
+.newsletter-button {
+  background: #ff6b5b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+}
+
+.newsletter-button:hover {
+  background: #ff5a50;
+  transform: translateY(-1px);
+}
+
+.newsletter-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 107, 91, 0.3);
+}
+
+.newsletter-button i {
+  font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .footx {
+    padding-top: 2.75rem;
+  }
+  .footx-vic--rainbow {
+    display: none;
+  }
+  .footx-vic--cloud {
+    left: 18px;
+    bottom: 120px;
+    width: 72px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footx-vic--arrow {
+    left: 50%;
+    top: 10%;
+    width: 36px;
+  }
+}
+
+.footx {
+  color: #000 !important;
+}
+.footx a {
+  color: #000 !important;
+}
+.footx .footx-link {
+  color: #000 !important;
+}
+.footx .footx-muted {
+  color: #000 !important;
+}
+/* =======================================  End Footer Form Styles ======================================== */

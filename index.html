@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta
+      name="description"
+      content="Kidora Kindergarten - A joyful place for kids to learn and grow."
+    >
+    <meta
+      name="keywords"
+      content="Kindergarten, Kids Education, Preschool, Child Learning, Kidora"
+    >
+    <meta name="author" content="nano_theme" >
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Kindergarten - Kidora" >
+    <meta
+      property="og:description"
+      content="A joyful place for kids to learn and grow."
+    >
+    <meta property="og:image" content="assets/img/cover.jpg" >
+    <meta property="og:type" content="website" >
+    <meta
+      property="og:url"
+      content="https://theme.nanoit.biz/tf-kidora-demo/"
+    >
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:title" content="Kindergarten - Kidora" >
+    <meta
+      name="twitter:description"
+      content="A joyful place for kids to learn and grow."
+    >
+    <meta name="twitter:image" content="assets/img/cover.jpg" >
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" >
+    <!-- Canonical -->
+    <link rel="canonical" href="https://theme.nanoit.biz/tf-kidora-demo/index.html">
+    <!-- Title -->
+    <title>Kindergarten - Kidora</title>
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/packages/bootstrap.min.css" >
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="assets/css/packages/bootstrap-icons.css"
+    >
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/kindergarten.css" >
+    
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-container">
+      <div class="preloader-content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="200px"
+          width="200px"
+          viewBox="0 0 200 200"
+          class="pencil"
+        >
+          <defs>
+            <clipPath id="pencil-eraser">
+              <rect height="30" width="30" ry="5" rx="5"></rect>
+            </clipPath>
+          </defs>
+          <circle
+            transform="rotate(-113,100,100)"
+            stroke-linecap="round"
+            stroke-dashoffset="439.82"
+            stroke-dasharray="439.82 439.82"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            r="70"
+            class="pencil__stroke"
+          ></circle>
+          <g transform="translate(100,100)" class="pencil__rotate">
+            <g fill="none">
+              <circle
+                transform="rotate(-90)"
+                stroke-dashoffset="402"
+                stroke-dasharray="402.12 402.12"
+                stroke-width="30"
+                stroke="hsl(223,90%,50%)"
+                r="64"
+                class="pencil__body1"
+              ></circle>
+              <circle
+                transform="rotate(-90)"
+                stroke-dashoffset="465"
+                stroke-dasharray="464.96 464.96"
+                stroke-width="10"
+                stroke="hsl(223,90%,60%)"
+                r="74"
+                class="pencil__body2"
+              ></circle>
+              <circle
+                transform="rotate(-90)"
+                stroke-dashoffset="339"
+                stroke-dasharray="339.29 339.29"
+                stroke-width="10"
+                stroke="hsl(223,90%,40%)"
+                r="54"
+                class="pencil__body3"
+              ></circle>
+            </g>
+            <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
+              <g class="pencil__eraser-skew">
+                <rect
+                  height="30"
+                  width="30"
+                  ry="5"
+                  rx="5"
+                  fill="hsl(223,90%,70%)"
+                ></rect>
+                <rect
+                  clip-path="url(#pencil-eraser)"
+                  height="30"
+                  width="5"
+                  fill="hsl(223,90%,60%)"
+                ></rect>
+                <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
+                <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
+                <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
+                <rect
+                  height="2"
+                  width="30"
+                  y="6"
+                  fill="hsla(223,10%,10%,0.2)"
+                ></rect>
+                <rect
+                  height="2"
+                  width="30"
+                  y="13"
+                  fill="hsla(223,10%,10%,0.2)"
+                ></rect>
+              </g>
+            </g>
+            <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
+              <polygon
+                points="15 0,30 30,0 30"
+                fill="hsl(33,90%,70%)"
+              ></polygon>
+              <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
+              <polygon
+                points="15 0,20 10,10 10"
+                fill="hsl(223,10%,10%)"
+              ></polygon>
+            </g>
+          </g>
+        </svg>
+        <p class="preloader-text">Loading...</p>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Main Content -->
+    <div id="main-content" class="main-content-hidden">
+      <!-- ============== TOP BAR ============== -->
+      <div
+        class="topbar topvarbg-navy text-white py-2 small"
+        
+        
+      >
+        <div
+          class="container d-flex align-items-center justify-content-between gap-3"
+        >
+          <!-- left: phone + opening time -->
+          <ul
+            class="list-unstyled d-flex align-items-center mb-0 gap-4 flex-wrap"
+          >
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone custom-blue" aria-hidden="true"></i>
+              <span class="fw-semibold text-salmon">Phone</span>
+              <a
+                class="text-decoration-none custom-blue"
+                href="tel:+880223832652"
+                >+880 223 832 652</a
+              >
+            </li>
+
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock-history custom-blue" aria-hidden="true"></i>
+              <span class="fw-semibold text-salmon">Opening Time</span>
+              <span class="text-white-75 custom-blue">9:30am–5:30pm</span>
+            </li>
+          </ul>
+
+          <!-- right: follow us + social -->
+          <div class="d-flex align-items-center gap-3">
+            <span
+              class="topbar-follow d-none d-sm-inline text-white-75 custom-blue"
+              >Follow us</span
+            >
+
+            <ul class="list-unstyled d-flex align-items-center mb-0 gap-2">
+              <li>
+                <a class="topbar-social-dot" href="#" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="topbar-social-dot" href="#" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="topbar-social-dot" href="#" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a class="topbar-social-dot" href="#" aria-label="X (Twitter)">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ============ END TOP BAR ============ -->
+
+      <!-- ================= Start HEADER  ================= -->
+      <header
+        class="navbar navbar-expand-xl nav-dark bg-navy py-3"
+        aria-label="Primary"
+      >
+        <div class="container align-items-center">
+          <!-- brand logo -->
+          <a class="navbar-brand me-3" href="index.html" aria-label="Homepage">
+            <img
+              src="assets/img/privateNanny/pnnlogo.png"
+              alt="Kidora Logo"
+              class="logo-img"
+            >
+          </a>
+
+          <!-- toggler (mobile) -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNav"
+            aria-controls="primaryNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- centered capsule nav -->
+          <div
+            class="collapse navbar-collapse justify-content-xl-center"
+            id="primaryNav"
+          >
+            <div class="nav-pod mx-xl-4 my-3 my-xl-0">
+              <ul class="navbar-nav align-items-xl-center">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="homeMenu"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark shadow"
+                    aria-labelledby="homeMenu"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="index.html"
+                        >Kindergarten</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="private-nanny.html"
+                        >Private Nanny</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pre-school.html"
+                        >Pre School</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="play-learn.html"
+                        >Play & Learn</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="pagesMenu"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Page
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark shadow"
+                    aria-labelledby="pagesMenu"
+                  >
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Programs</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="program-grid.html"
+                            >Program Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="program-details.html"
+                            >Program Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Events</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="event-grid.html"
+                            >Event Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="event-details.html"
+                            >Event Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Teachers</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="our-teacher.html"
+                            >Our Teacher</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="teacher-details.html"
+                            >Teacher Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pricing.html">Pricing</a>
+                    </li>
+                    <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="program-grid.html">Courses</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="blogMenu"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark shadow"
+                    aria-labelledby="blogMenu"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="our-blog.html">Our Blog</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-list.html"
+                        >Blog List</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-details.html"
+                        >Blog Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mobile-only actions: Search + CTA + Menu -->
+            <div class="d-xl-none w-100 mt-3 pt-3 border-top">
+              <div
+                class="d-flex align-items-center justify-content-between gap-3"
+              >
+                <!-- Search Button -->
+                <button class="btn btn-icon" type="button" aria-label="Search">
+                  <i class="bi bi-search"></i>
+                </button>
+
+                <!-- Main CTA -->
+                <a
+                  href="#"
+                  class="btn btn-cta flex-grow-1 d-inline-flex align-items-center justify-content-center gap-2"
+                >
+                  <span>Book A Visit</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Menu Button -->
+                <button class="btn btn-icon" type="button" aria-label="Menu">
+                  <i class="bi bi-list"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- right actions (desktop only) -->
+            <div class="d-none d-xl-flex align-items-center gap-3">
+              <!-- circular search -->
+              <button class="btn btn-icon" type="button" aria-label="Search">
+                <i class="bi bi-search"></i>
+              </button>
+
+              <!-- CTA -->
+              <a
+                href="#"
+                class="btn btn-cta d-inline-flex align-items-center gap-2"
+              >
+                <span>Book A Visit</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <!-- Menu Button -->
+              <button
+                class="btn btn-icon"
+                type="button"
+                aria-label="Menu"
+                id="kMenuBtn"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Zigzag separator -->
+        <div class="header-zigzag"></div>
+      </header>
+      <!-- ================= END HEADER ================== -->
+      <!-- Mobile sidebar (hidden by default) -->
+      <aside
+        class="k-sidebar"
+        id="kSidebar"
+        aria-hidden="true"
+        aria-label="Quick actions menu"
+      >
+        <button class="k-sidebar__close" type="button" aria-label="Close menu">
+          ×
+        </button>
+        <h3 class="k-sidebar__title">Quick Actions</h3>
+        <ul class="k-sidebar__list">
+          <li>View Class Schedule</li>
+          <li>Meet Our Teachers</li>
+          <li>Parent Resources</li>
+        </ul>
+      </aside>
+
+      <!-- Dim overlay for click-outside close -->
+      <div class="k-sidebar-dim" id="kSidebarDim" aria-hidden="true"></div>
+
+      <!-- ================= SEARCH OVERLAY (moved outside nav to be top-level) ================= -->
+      <div
+        id="searchOverlay"
+        class="search-overlay d-flex flex-column align-items-center justify-content-center"
+      >
+        <button
+          type="button"
+          class="btn-close-overlay"
+          aria-label="Close search"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+
+        <div class="text-center px-3">
+          <h2 class="mb-4 fw-bold">
+            How can I help you, <span class="text-coral">Today?</span>
+          </h2>
+          <form class="w-100" style="max-width: 600px">
+            <input
+              id="searchInput"
+              type="text"
+              class="search-input"
+              placeholder="Search..."
+              aria-label="Search input"
+            >
+          </form>
+        </div>
+      </div>
+      <!-- ================= END SEARCH OVERLAY ============== -->
+
+      <!-- =================== Start kindergarten S1 3001 =================== -->
+      <div class="kindergartenS1">
+        <!-- Background hero image -->
+        <img
+          src="assets/img/kindergarten/ks1p1.png"
+          alt="Happy kids in classroom"
+          class="kindergartenS1hero"
+        >
+
+        <div class="container position-relative">
+          <div class="row align-items-center">
+            <!-- small left doodles -->
+            <div class="kindergartenS1-doodles">
+              <span class="kindergartenS1-triangle"></span>
+            </div>
+
+            <!-- RIGHT IMAGE RING -->
+            <div class="col-lg-6 col-12 kindergartenS1-ringWrap">
+              <img
+                src="assets/img/kindergarten/ks1i1.png"
+                alt="Education for kids circular text"
+                class="kindergartenS1-ring"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== End kindergarten S1 3001 =================== -->
+      <!-- =================== Start kindergarten S2 3002 =================== -->
+      <section
+        class="kindergartenS2-section py-5"
+        aria-labelledby="kindergartenS2-heading"
+      >
+        <div class="container position-relative">
+          <div class="row align-items-center g-5 mt-3">
+            <!-- Left image collage -->
+            <div class="col-12 col-lg-6">
+              <div
+                class="kindergartenS2-collage mx-auto js-aboutus-reveal"
+                role="img"
+                aria-label="Happy kids learning and playing"
+              >
+                <!-- decorative goodies -->
+                <img
+                  
+                  class="kindergartenS2-deco kindergartenS2-deco--plane"
+                  src="assets/img/aboutUs/abi1.png"
+                  alt="kidora img"
+                  aria-hidden="true"
+                >
+                <img
+                  
+                  class="kindergartenS2-deco kindergartenS2-deco--dots"
+                  src="assets/img/aboutUs/abi2.png"
+                  alt="kidora img"
+                  aria-hidden="true"
+                >
+                <img
+                  
+                  class="kindergartenS2-deco kindergartenS2-deco--like"
+                  src="assets/img/aboutUs/abi3.png"
+                  alt="kidora img"
+                  aria-hidden="true"
+                >
+
+                <!-- three diamond cards -->
+                <figure class="kindergartenS2-diamond kindergartenS2-d1">
+                  <img
+                    
+                    src="assets/img/aboutUs/abs1.png"
+                    alt="Child building with colorful blocks"
+                  >
+                </figure>
+                <figure class="kindergartenS2-diamond kindergartenS2-d2">
+                  <img
+                    
+                    src="assets/img/aboutUs/abs2.png"
+                    alt="Smiling child portrait"
+                  >
+                </figure>
+                <figure class="kindergartenS2-diamond kindergartenS2-d3">
+                  <img
+                    
+                    src="assets/img/aboutUs/abs3.png"
+                    alt="Student in class smiling"
+                  >
+                </figure>
+
+                <!-- swirl/rocket overlays (optional) -->
+                <img
+                  
+                  class="kindergartenS2-overlay kindergartenS2--left"
+                  src="assets/img/aboutUs/abi4.png"
+                  alt="kidora img"
+                  aria-hidden="true"
+                >
+                <img
+                  
+                  class="kindergartenS2-overlay kindergartenS2--right"
+                  src="assets/img/aboutUs/abi5.png"
+                  alt="kidora img"
+                  aria-hidden="true"
+                >
+              </div>
+            </div>
+
+            <!-- Right content -->
+            <div class="col-12 col-lg-6">
+              <div class="kindergartenS2-head js-aboutus-reveal mb-3">
+                <p class="kindergartenS2-eyebrow mb-2">
+                  <span>✽ Core Features </span>
+                </p>
+                <h2
+                  id="kindergartenS2-heading"
+                  class="kindergartenS2-title mb-3"
+                >
+                  The Best Playschool For<br class="d-none d-xl-inline" >
+                  Your Kid
+                </h2>
+
+                <!-- tabs/pills 7001-->
+                <div class="kindergartenS2-pills d-flex flex-wrap gap-3 mb-3">
+                  <button
+                    class="kindergartenS2-pill is-active"
+                    type="button"
+                    aria-pressed="true"
+                  >
+                    Our History
+                  </button>
+                  <button class="kindergartenS2-pill" type="button">
+                    Our School
+                  </button>
+                  <button class="kindergartenS2-pill" type="button">
+                    Our Kids
+                  </button>
+                </div>
+
+                <!-- Dynamic content sections -->
+                <div class="kindergartenS2-content">
+                  <p
+                    class="kindergartenS2-desc mb-4 aboutus-content aboutus-content-history"
+                  >
+                    Hised sedaugue Pre-school has open door and also offer free
+                    trial sessions that child Creative Learning Opportunity For
+                    Kids Hised sedaugue felis Phasellus gravida lacus quis
+                    eros,social skills, and a lifelong love of learning.
+                  </p>
+
+                  <p
+                    class="kindergartenS2-desc mb-4 aboutus-content aboutus-content-school"
+                    style="display: none"
+                  >
+                    Our school provides a nurturing environment where children
+                    can grow and learn through play. We offer state-of-the-art
+                    facilities with modern classrooms, playgrounds, and learning
+                    centers. Our experienced teachers create engaging activities
+                    that foster creativity and curiosity.
+                  </p>
+
+                  <p
+                    class="kindergartenS2-desc mb-4 aboutus-content aboutus-content-kids"
+                    style="display: none"
+                  >
+                    Our kids are at the heart of everything we do. We celebrate
+                    each child's unique personality and learning style. Through
+                    interactive play and structured learning, our students
+                    develop confidence, social skills, and a lifelong love of
+                    learning.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row g-4 kindergartenS2-features js-aboutus-reveal">
+                <div class="col-12 col-md-6">
+                  <div class="kindergartenS2-feature">
+                    <img
+                      
+                      src="assets/img/aboutUs/abi7.png"
+                      alt="kidora img"
+                      class="kindergartenS2-feat-ico"
+                      aria-hidden="true"
+                    >
+                    <span>Grow with love</span>
+                  </div>
+                  <div class="kindergartenS2-feature">
+                    <img
+                      
+                      src="assets/img/aboutUs/abi7.png"
+                      alt="kidora img"
+                      class="kindergartenS2-feat-ico"
+                      aria-hidden="true"
+                    >
+                    <span>Your Child Will Take</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="kindergartenS2-feature">
+                    <img
+                      
+                      src="assets/img/aboutUs/abi7.png"
+                      alt="kidora img"
+                      class="kindergartenS2-feat-ico"
+                      aria-hidden="true"
+                    >
+                    <span>Learn &amp; Play</span>
+                  </div>
+                  <div class="kindergartenS2-feature">
+                    <img
+                      
+                      src="assets/img/aboutUs/abi7.png"
+                      alt="kidora img"
+                      class="kindergartenS2-feat-ico"
+                      aria-hidden="true"
+                    >
+                    <span>Bright Beginnings</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex flex-wrap align-items-center gap-4 mt-4 js-aboutus-reveal"
+              >
+                <a
+                  href="#"
+                  class="btn btn-cta d-inline-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-up-right"></i
+                ></a>
+                <div
+                  class="kindergartenS2-call d-flex align-items-center gap-3"
+                  
+                >
+                  <div class="kindergartenS2-call-ico" aria-hidden="true">
+                    <img
+                      
+                      src="assets/img/aboutUs/abi6.png"
+                      alt="kidora img"
+                    >
+                  </div>
+                  <div>
+                    <div class="kindergartenS2-call-num">(804) 565-4126</div>
+                    <div class="kindergartenS2-call-sub">Call For Booking</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scalloped border decoration -->
+        <div class="kindergartenS2-scalloped-border"></div>
+      </section>
+
+      <!-- =================== End kindergarten S2 3002 =================== -->
+      <!-- =================== Start kindergarten S3 3003 =================== -->
+      <section
+        class="kindergartenS3-section"
+        aria-labelledby="kindergartenS3-heading"
+      >
+        <div class="kindergartenS3-bg js-kindergartenS3-reveal">
+          <div class="container">
+            <h2 id="kindergartenS3-heading" class="visually-hidden">
+              Join Our New Session
+            </h2>
+
+            <div class="row align-items-center g-4">
+              <!-- Center - Call to Action -->
+              <div class="col-lg-12 text-center mb-5">
+                <div class="kindergartenS3-content">
+                  <p class="kindergartenS3-subtitle">
+                    <span
+                      class="kindergartenS11-eyebrow text-uppercase small fw-bold mb-1"
+                      >✽ New Session ✽
+                    </span>
+                  </p>
+                  <h3 class="kindergartenS3-title">
+                    Find Classes For Every Age
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Class Cards -->
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <!-- Card 1: Brain Train -->
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="kindergartenS3-class-card">
+                      <div class="kindergartenS3-class-icon">
+                        <img
+                          
+                          src="assets/img/kindergarten/ks3i2.png"
+                          alt="Brain Train icon"
+                          class="img-fluid"
+                        >
+                      </div>
+                      <h4 class="kindergartenS3-class-title">Brain Train</h4>
+                      <p class="kindergartenS3-class-time">8.00am - 10.00am</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2: Playland & Caffe -->
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="kindergartenS3-class-card">
+                      <div class="kindergartenS3-class-icon">
+                        <img
+                          
+                          src="assets/img/kindergarten/ks3i3.png"
+                          alt="Playland & Cafe icon"
+                          class="img-fluid"
+                        >
+                      </div>
+                      <h4 class="kindergartenS3-class-title">
+                        Playland & Cafe
+                      </h4>
+                      <p class="kindergartenS3-class-time">8.00am - 10.00am</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3: Alphabet Matching -->
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="kindergartenS3-class-card">
+                      <div class="kindergartenS3-class-icon">
+                        <img
+                          
+                          src="assets/img/kindergarten/ks3i4.png"
+                          alt="Alphabet Matching icon"
+                          class="img-fluid"
+                        >
+                      </div>
+                      <h4 class="kindergartenS3-class-title">
+                        Alphabet Matching
+                      </h4>
+                      <p class="kindergartenS3-class-time">8.00am - 10.00am</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 4: Drawing & Paintings -->
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="kindergartenS3-class-card">
+                      <div class="kindergartenS3-class-icon">
+                        <img
+                          
+                          src="assets/img/kindergarten/ks3i5.png"
+                          alt="Drawing & Paintings icon"
+                          class="img-fluid"
+                        >
+                      </div>
+                      <h4 class="kindergartenS3-class-title">
+                        Drawing & Paintings
+                      </h4>
+                      <p class="kindergartenS3-class-time">8.00am - 10.00am</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Background Image -->
+            <div class="kindergartenS3-bg-img">
+              <img
+                
+                src="assets/img/kindergarten/ks10p1.jpg"
+                alt="Background"
+                class="img-fluid"
+              >
+            </div>
+
+            <!-- bear -->
+            <div class="kindergartenS3-bear">
+              <img
+                
+                src="assets/img/kindergarten/ks3i1.png"
+                alt="Decorative ellipses"
+                class="img-fluid"
+              >
+            </div>
+
+            <!-- Bottom scalloped edge -->
+            <div class="kindergartenS3-bottom-scallop"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== End kindergarten S3 3003 =================== -->
+      <!-- =================== Start kindergarten S4 3004 =================== -->
+      <section class="kindergartenS4-section py-5 mb-5">
+        <div class="container">
+          <img
+            
+            class="kindergartenS4-left"
+            src="assets/img/privateNanny/pns4i1.png"
+            alt="kidora img"
+            aria-hidden="true"
+          >
+          <img
+            
+            class="kindergartenS4-right"
+            src="assets/img/privateNanny/pns4i2.png"
+            alt="kidora img"
+            aria-hidden="true"
+          >
+          <!-- eyebrow + title -->
+          <p
+            class="kindergartenS7-eyebrow text-center mb-2 js-kindergartenS4-reveal"
+            data-seq="0"
+          >
+            ✽ Courses ✽
+          </p>
+          <h2
+            class="kindergartenS7-title text-center js-kindergartenS4-reveal"
+            data-seq="1"
+          >
+            Kids Courses at Study kids
+          </h2>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="kindergartenS4 js-kindergartenS4-reveal">
+                <img
+                  
+                  src="assets/img/eventgrid/eg1.png"
+                  alt="Open Session"
+                  class="img-fluid rounded-top"
+                >
+                <div class="kindergartenS4-body">
+                  <h5 class="kindergartenS4-title">Open Session</h5>
+                  <p class="kindergartenS4-text">
+                    An introduction to colors, their shapes, and basic artistic
+                    and expressions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="kindergartenS4 js-kindergartenS4-reveal">
+                <img
+                  
+                  src="assets/img/eventgrid/eg2.png"
+                  alt="Class Trip"
+                  class="img-fluid rounded-top"
+                >
+                <div class="kindergartenS4-body">
+                  <h5 class="kindergartenS4-title">Class Trip</h5>
+                  <p class="kindergartenS4-text">
+                    An introduction to colors, their shapes, and basic artistic
+                    and expressions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="kindergartenS4 js-kindergartenS4-reveal">
+                <img
+                  
+                  src="assets/img/eventgrid/eg3.png"
+                  alt="Birthday Party"
+                  class="img-fluid rounded-top"
+                >
+                <div class="kindergartenS4-body">
+                  <h5 class="kindergartenS4-title">Birthday Party</h5>
+                  <p class="kindergartenS4-text">
+                    An introduction to colors, their shapes, and basic artistic
+                    and expressions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== End kindergarten S4 3004 =================== -->
+      <!-- =================== Start kindergarten S5 3005 =================== -->
+      <section
+        class="kindergartenS5 py-5"
+        aria-labelledby="kindergartenS5-title"
+      >
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <!-- Copy -->
+            <div class="col-lg-6 kindergartenS5-io" data-io-idx="0">
+              <p class="kindergartenS5-eyebrow mb-2">
+                <span class="kindergartenS5-star" aria-hidden="true">✽</span>
+                why choose Us
+              </p>
+              <h2 id="kindergartenS5-title" class="kindergartenS5-title mb-3">
+                New Approach To Fun
+              </h2>
+              <p class="kindergartenS5-text mb-4">
+                Pre-school has open door and also offer free trial sessions that
+                child Creative Learning Opportunity For Kids. Hised sedaque
+                felis Phasellus gravida lacus quis eros.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-cta d-inline-flex align-items-center justify-content-center gap-2"
+                aria-label="Read more about our new approach"
+              >
+                Read More
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+            <!-- Media -->
+            <div class="col-lg-6 kindergartenS5-io" data-io-idx="1">
+              <figure class="kindergartenS5-media m-0 position-relative">
+                <!-- main image (you will replace later) -->
+                <img
+                  
+                  class="img-fluid kindergartenS5-img"
+                  src="assets/img/kindergarten/ks5p1.jpg"
+                  alt="Teacher helping children with drawing at a table"
+                >
+
+                <!-- BLUR halo behind the play button -->
+                <div class="kindergartenS5-playBlur" aria-hidden="true"></div>
+
+                <!-- Play button with spinning text -->
+                <button
+                  type="button"
+                  class="kindergartenS5-play"
+                  aria-label="Play promotional video"
+                  data-yt="https://www.youtube.com/embed/CaBEdunlaOU"
+                >
+                  <!-- triangle -->
+                  <svg
+                    class="kindergartenS5-playTriangle"
+                    viewBox="0 0 60 60"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="30"
+                      cy="30"
+                      r="30"
+                      class="kindergartenS5-playBg"
+                    />
+                    <polygon
+                      points="24,18 24,42 44,30"
+                      class="kindergartenS5-playIcon"
+                    />
+                  </svg>
+
+                  <!-- spinning circular text -->
+                  <svg
+                    class="kindergartenS5-spinText"
+                    viewBox="0 0 120 120"
+                    aria-hidden="true"
+                  >
+                    <defs>
+                      <path
+                        id="kindergartenS5-tpath"
+                        d="M60,60 m0,-50 a50,50 0 1,1 0,100 a50,50 0 1,1 0,-100"
+                      />
+                    </defs>
+                    <g class="kindergartenS5-spinRing">
+                      <text class="kindergartenS5-spinCopy">
+                        <textPath href="#kindergartenS5-tpath" startOffset="0%">
+                          • Play Our Promotional Video • Play Our Promotional
+                          Video
+                        </textPath>
+                      </text>
+                    </g>
+                  </svg>
+                </button>
+              </figure>
+
+              <div
+                class="kindergartenS5-modal"
+                aria-hidden="true"
+                role="dialog"
+                aria-modal="true"
+              >
+                <div class="kindergartenS5-modal__backdrop" data-close-modal></div>
+
+                <div class="kindergartenS5-modal__dialog" role="document">
+                  <button
+                    class="kindergartenS5-close"
+                    type="button"
+                    aria-label="Close video"
+                    data-close-modal
+                  >
+                    ×
+                  </button>
+                  <div class="ratio ratio-16x9 kindergartenS5-iframewrap">
+                    <iframe
+                      class="kindergartenS5-iframe"
+                      title="YouTube video"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== End kindergarten S5 3005 =================== -->
+      <!-- =================== Start kindergarten S6 3006 =================== -->
+      <section
+        class="kindergartenS6-section py-5"
+        aria-labelledby="kindergartenS6-heading"
+      >
+        <div class="kindergartenS6-bg js-kindergartenS6-reveal">
+          <div class="container">
+            <!-- eyebrow + title -->
+            <p class="kindergartenS6-eyebrow text-center mb-2" data-seq="0">
+              ✽ Choose Us ✽
+            </p>
+            <h2
+              id="kindergartenS6-heading"
+              class="kindergartenS6-title text-center mb-5"
+              data-seq="1"
+            >
+              Our Programs
+            </h2>
+
+            <div
+              class="row text-center g-4 align-items-center justify-content-center"
+            >
+              <!-- Program Card 1 -->
+              <div class="col-6 col-lg-3">
+                <article class="kindergartenS6-program-card">
+                  <div class="kindergartenS6-grade-circle grade-1">
+                    <span class="kindergartenS6-grade-num">Grade 01</span>
+                  </div>
+                  <h3 class="kindergartenS6-grade-title">Grade 1</h3>
+                  <p class="kindergartenS6-age-range">Age 03 - 04</p>
+                </article>
+              </div>
+
+              <!-- Program Card 2 -->
+              <div class="col-6 col-lg-3">
+                <article class="kindergartenS6-program-card">
+                  <div class="kindergartenS6-grade-circle grade-2">
+                    <span class="kindergartenS6-grade-num">Grade 02</span>
+                  </div>
+                  <h3 class="kindergartenS6-grade-title">Grade 2</h3>
+                  <p class="kindergartenS6-age-range">Age 08 - 04</p>
+                </article>
+              </div>
+
+              <!-- Program Card 3 -->
+              <div class="col-6 col-lg-3">
+                <article class="kindergartenS6-program-card">
+                  <div class="kindergartenS6-grade-circle grade-3">
+                    <span class="kindergartenS6-grade-num">Grade 03</span>
+                  </div>
+                  <h3 class="kindergartenS6-grade-title">Grade 3</h3>
+                  <p class="kindergartenS6-age-range">Age 18 - 04</p>
+                </article>
+              </div>
+
+              <!-- Program Card 4 -->
+              <div class="col-6 col-lg-3">
+                <article class="kindergartenS6-program-card">
+                  <div class="kindergartenS6-grade-circle grade-4">
+                    <span class="kindergartenS6-grade-num">Grade 04</span>
+                  </div>
+                  <h3 class="kindergartenS6-grade-title">Grade 4</h3>
+                  <p class="kindergartenS6-age-range">Age 16 - 04</p>
+                </article>
+              </div>
+              <img
+                
+                src="assets/img/aboutUs/abs4overlay.png"
+                alt="overlay"
+                class="kindergartenS6-overlay"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== End kindergarten S6 3006 =================== -->
+      <!-- =================== Start kindergarten S7 3007 =================== -->
+      <section
+        class="kindergartenS7-section py-5"
+        aria-labelledby="kindergartenS7-heading"
+      >
+        <div class="container">
+          <!-- eyebrow + title -->
+          <p
+            class="kindergartenS7-eyebrow text-center mb-2 js-kindergartenS7-reveal"
+            data-seq="0"
+          >
+            ✽ Classes ✽
+          </p>
+          <h2
+            id="kindergartenS7-heading"
+            class="kindergartenS7-title text-center mb-5 js-kindergartenS7-reveal"
+            data-seq="1"
+          >
+            Popular Classes
+          </h2>
+
+          <!-- cards -->
+          <div class="row g-4 justify-content-center js-kindergartenS7-wrap">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <article
+                class="kindergartenS7-card js-kindergartenS7-reveal"
+                data-seq="2"
+              >
+                <div class="kindergartenS7-media-wrapper position-relative">
+                  <div class="kindergartenS7-media overflow-hidden rounded-top">
+                    <img
+                      src="assets/img/privateNanny/pns6p1.png"
+                      alt="Language Class"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                  <span
+                    class="kindergartenS7-badge"
+                    
+                    ><span class="kindergartenS7-badgeBG">$35</span></span
+                  >
+                </div>
+                <div class="kindergartenS7-body p-3">
+                  <h3 class="kindergartenS7-name h5 mb-1">Language Class</h3>
+                  <p class="kindergartenS7-desc mb-3">
+                    The perfect class for your child with the best staff and
+                    best teachers.
+                  </p>
+                  <hr class="pg-dotted" >
+                  <div
+                    class="row row-cols-3 text-center gy-2 kindergartenS7-meta"
+                  >
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Age</div>
+                      <div class="kindergartenS7-meta-value">3–5 yrs</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Time</div>
+                      <div class="kindergartenS7-meta-value">9:00 am</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Capacity</div>
+                      <div class="kindergartenS7-meta-value">20 kids</div>
+                    </div>
+                  </div>
+                  <div class="d-grid mt-3">
+                    <button
+                      class="btn kindergartenS7-btn-primary"
+                      type="button"
+                    >
+                      Join this class
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 2 (with button) -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <article
+                class="kindergartenS7-card js-kindergartenS7-reveal"
+                data-seq="2"
+              >
+                <div class="kindergartenS7-media-wrapper position-relative">
+                  <div class="kindergartenS7-media overflow-hidden rounded-top">
+                    <img
+                      src="assets/img/privateNanny/pns6p2.png"
+                      alt="Drawing Class"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                  <span
+                    class="kindergartenS7-badge"
+                    
+                    ><span class="kindergartenS7-badgeBG">$140</span></span
+                  >
+                </div>
+                <div class="kindergartenS7-body p-3">
+                  <h3 class="kindergartenS7-name h5 mb-1">Drawing Class</h3>
+                  <p class="kindergartenS7-desc mb-3">
+                    The perfect class for your child with the best staff and
+                    best teachers.
+                  </p>
+                  <hr class="pg-dotted" >
+                  <div
+                    class="row row-cols-3 text-center gy-2 kindergartenS7-meta"
+                  >
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Age</div>
+                      <div class="kindergartenS7-meta-value">3–5 yrs</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Time</div>
+                      <div class="kindergartenS7-meta-value">8–10 am</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Capacity</div>
+                      <div class="kindergartenS7-meta-value">20 kids</div>
+                    </div>
+                  </div>
+                  <div class="d-grid mt-3">
+                    <button
+                      class="btn kindergartenS7-btn-primary"
+                      type="button"
+                    >
+                      Join this class
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <article
+                class="kindergartenS7-card js-kindergartenS7-reveal"
+                data-seq="2"
+              >
+                <div class="kindergartenS7-media-wrapper position-relative">
+                  <div class="kindergartenS7-media overflow-hidden rounded-top">
+                    <img
+                      src="assets/img/privateNanny/pns6p3.png"
+                      alt="Mathematics Class"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                  <span
+                    class="kindergartenS7-badge"
+                    
+                    ><span class="kindergartenS7-badgeBG">Free</span></span
+                  >
+                </div>
+                <div class="kindergartenS7-body p-3">
+                  <h3 class="kindergartenS7-name h5 mb-1">Mathematics Class</h3>
+                  <p class="kindergartenS7-desc mb-3">
+                    The perfect class for your child with the best staff and
+                    best teachers.
+                  </p>
+                  <hr class="pg-dotted" >
+                  <div
+                    class="row row-cols-3 text-center gy-2 kindergartenS7-meta"
+                  >
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Age</div>
+                      <div class="kindergartenS7-meta-value">3–5 yrs</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Time</div>
+                      <div class="kindergartenS7-meta-value">8–10 am</div>
+                    </div>
+                    <div class="col">
+                      <div class="kindergartenS7-meta-label">Capacity</div>
+                      <div class="kindergartenS7-meta-value">20 kids</div>
+                    </div>
+                  </div>
+                  <div class="d-grid mt-3">
+                    <button
+                      class="btn kindergartenS7-btn-primary"
+                      type="button"
+                    >
+                      Join this class
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== End kindergarten S7 3007 =================== -->
+      <!-- =================== Start kindergarten S8 3008 =================== -->
+      <section class="kindergartenS8-section">
+        <!-- decorative images (replace paths later) -->
+        <img
+          
+          class="kindergartenS8-deco kindergartenS8-scribble"
+          src="assets/img/scribble.png"
+          alt="kidora img"
+          aria-hidden="true"
+        >
+        <img
+          
+          class="kindergartenS8-deco kindergartenS8-arrow"
+          src="assets/img/arrow.png"
+          alt="kidora img"
+          aria-hidden="true"
+        >
+        <img
+          
+          class="kindergartenS8-deco kindergartenS8-sticker-top"
+          src="assets/img/sticker-top.png"
+          alt="kidora img"
+          aria-hidden="true"
+        >
+        <img
+          
+          class="kindergartenS8-deco kindergartenS8-sticker-mid"
+          src="assets/img/sticker-mid.png"
+          alt="kidora img"
+          aria-hidden="true"
+        >
+        <img
+          
+          class="kindergartenS8-deco kindergartenS8-kid-right"
+          src="assets/img/kid-right.png"
+          alt="kidora img"
+          aria-hidden="true"
+        >
+
+        <div class="kindergartenS8-wrap">
+          <!-- Left: big quoted image -->
+          <figure class="kindergartenS8-quote">
+            <!-- This image is masked by the quotation mark shape -->
+            <img
+              
+              class="kindergartenS8-main"
+              src="assets/img/testimonial-main.png"
+              alt="Happy kid"
+            >
+            <!-- round quote badge -->
+          </figure>
+
+          <!-- Right: content -->
+          <div class="kindergartenS8-content">
+            <p class="kindergartenS8-kicker">
+              <span class="text-coral">✽ Feedback Faq</span>
+            </p>
+            <h2 class="kindergartenS8-title">What our Students say?</h2>
+
+            <blockquote class="kindergartenS8-quote-text">
+              “We look forward to developing this long-term relationship with
+              children and parents and will welcome children into our centre
+              after-school. Our afterschool service.”
+            </blockquote>
+
+            <div class="kindergartenS8-stars" >
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+
+            <div class="kindergartenS8-author">
+              <img
+                
+                class="kindergartenS8-avatar"
+                src="assets/img/avatar-parent.png"
+                alt="Parker Jonson"
+              >
+              <div>
+                <div class="kindergartenS8-name">parker jonson</div>
+                <div class="kindergartenS8-role">Student’s Parents</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== End kindergarten S8 3008 =================== -->
+      <!-- =================== Start kindergarten S9 3009 =================== -->
+      <section class="kindergartenS9-section py-5">
+        <div class="container">
+          <div class="text-center mb-4">
+            <p class="kindergartenS9-eyebrow text-uppercase small fw-bold mb-1">
+              ✽ Meet our staffs ✽
+            </p>
+            <h2 class="kindergartenS9-title m-0">Excellent teacher</h2>
+          </div>
+
+          <div class="kindergartenS9-grid">
+            <!-- CARD 1 -->
+            <div class="kindergartenS9-card-wrapper">
+              <div class="kindergartenS9-card">
+                <div
+                  class="kindergartenS9-bg"
+                  style="background-image: url('assets/img/aboutUs/abt1.png')"
+                ></div>
+
+                <!-- Facebook -->
+                <div class="kindergartenS9-box kindergartenS9-box1">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M22 12.07C22 6.48 17.52 2 11.93 2 6.35 2 1.87 6.48 1.87 12.07c0 4.9 3.58 8.97 8.26 9.8v-6.93H7.9v-2.87h2.23V9.83c0-2.21 1.32-3.44 3.34-3.44.97 0 1.98.17 1.98.17v2.17h-1.12c-1.1 0-1.44.68-1.44 1.38v1.66h2.45l-.39 2.87h-2.06v6.93c4.68-.83 8.26-4.9 8.26-9.8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="kindergartenS9-box kindergartenS9-box2">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9.001 4.5 4.5 0 0 1 0-9zM18 7.2a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Twitter -->
+                <div class="kindergartenS9-box kindergartenS9-box3">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.9-2.6 1.1A3.9 3.9 0 0 0 12 8.6c0 .3 0 .7.1 1A11 11 0 0 1 3 5.2a3.9 3.9 0 0 0 1.2 5.2c-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.3 3.5 3.1 3.9-.3.1-.7.1-1 .1-.3 0-.5 0-.8-.1a3.9 3.9 0 0 0 3.6 2.7A7.9 7.9 0 0 1 2 19.4 11.2 11.2 0 0 0 8.1 21c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.5 1.5-1.2 2.1-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="kindergartenS9-box kindergartenS9-box4">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.05h.05c.53-1 1.84-2.05 3.8-2.05 4.07 0 4.82 2.68 4.82 6.17V23h-4v-6.63c0-1.58-.03-3.62-2.2-3.62-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Teacher Info -->
+              <div class="kindergartenS9-teacher-info">
+                <h4 class="kindergartenS9-teacher-name">Catherine Avery</h4>
+                <p class="kindergartenS9-teacher-title">Mathematics Teacher</p>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="kindergartenS9-card-wrapper">
+              <div class="kindergartenS9-card">
+                <div
+                  class="kindergartenS9-bg"
+                  style="background-image: url('assets/img/aboutUs/abt2.png')"
+                ></div>
+                <div class="kindergartenS9-box kindergartenS9-box1">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 12.07C22 6.48 17.52 2 11.93 2 6.35 2 1.87 6.48 1.87 12.07c0 4.9 3.58 8.97 8.26 9.8v-6.93H7.9v-2.87h2.23V9.83c0-2.21 1.32-3.44 3.34-3.44.97 0 1.98.17 1.98.17v2.17h-1.12c-1.1 0-1.44.68-1.44 1.38v1.66h2.45l-.39 2.87h-2.06v6.93c4.68-.83 8.26-4.9 8.26-9.8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box2">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9.001 4.5 4.5 0 0 1 0-9zM18 7.2a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box3">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.9-2.6 1.1A3.9 3.9 0 0 0 12 8.6c0 .3 0 .7.1 1A11 11 0 0 1 3 5.2a3.9 3.9 0 0 0 1.2 5.2c-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.3 3.5 3.1 3.9-.3.1-.7.1-1 .1-.3 0-.5 0-.8-.1a3.9 3.9 0 0 0 3.6 2.7A7.9 7.9 0 0 1 2 19.4 11.2 11.2 0 0 0 8.1 21c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.5 1.5-1.2 2.1-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box4">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.05h.05c.53-1 1.84-2.05 3.8-2.05 4.07 0 4.82 2.68 4.82 6.17V23h-4v-6.63c0-1.58-.03-3.62-2.2-3.62-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Teacher Info -->
+              <div class="kindergartenS9-teacher-info">
+                <h4 class="kindergartenS9-teacher-name">Emmy Jonas</h4>
+                <p class="kindergartenS9-teacher-title">Social Teacher</p>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="kindergartenS9-card-wrapper">
+              <div class="kindergartenS9-card">
+                <div
+                  class="kindergartenS9-bg"
+                  style="background-image: url('assets/img/aboutUs/abt3.jpg')"
+                ></div>
+                <div class="kindergartenS9-box kindergartenS9-box1">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 12.07C22 6.48 17.52 2 11.93 2 6.35 2 1.87 6.48 1.87 12.07c0 4.9 3.58 8.97 8.26 9.8v-6.93H7.9v-2.87h2.23V9.83c0-2.21 1.32-3.44 3.34-3.44.97 0 1.98.17 1.98.17v2.17h-1.12c-1.1 0-1.44.68-1.44 1.38v1.66h2.45l-.39 2.87h-2.06v6.93c4.68-.83 8.26-4.9 8.26-9.8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box2">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9.001 4.5 4.5 0 0 1 0-9zM18 7.2a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box3">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.9-2.6 1.1A3.9 3.9 0 0 0 12 8.6c0 .3 0 .7.1 1A11 11 0 0 1 3 5.2a3.9 3.9 0 0 0 1.2 5.2c-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.3 3.5 3.1 3.9-.3.1-.7.1-1 .1-.3 0-.5 0-.8-.1a3.9 3.9 0 0 0 3.6 2.7A7.9 7.9 0 0 1 2 19.4 11.2 11.2 0 0 0 8.1 21c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.5 1.5-1.2 2.1-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box4">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.05h.05c.53-1 1.84-2.05 3.8-2.05 4.07 0 4.82 2.68 4.82 6.17V23h-4v-6.63c0-1.58-.03-3.62-2.2-3.62-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Teacher Info -->
+              <div class="kindergartenS9-teacher-info">
+                <h4 class="kindergartenS9-teacher-name">Eleanor Alice</h4>
+                <p class="kindergartenS9-teacher-title">Drawing Teacher</p>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="kindergartenS9-card-wrapper">
+              <div class="kindergartenS9-card">
+                <div
+                  class="kindergartenS9-bg"
+                  style="background-image: url('assets/img/aboutUs/abt4.jpg')"
+                ></div>
+                <div class="kindergartenS9-box kindergartenS9-box1">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 12.07C22 6.48 17.52 2 11.93 2 6.35 2 1.87 6.48 1.87 12.07c0 4.9 3.58 8.97 8.26 9.8v-6.93H7.9v-2.87h2.23V9.83c0-2.21 1.32-3.44 3.34-3.44.97 0 1.98.17 1.98.17v2.17h-1.12c-1.1 0-1.44.68-1.44 1.38v1.66h2.45l-.39 2.87h-2.06v6.93c4.68-.83 8.26-4.9 8.26-9.8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box2">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9.001 4.5 4.5 0 0 1 0-9zM18 7.2a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box3">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.9-2.6 1.1A3.9 3.9 0 0 0 12 8.6c0 .3 0 .7.1 1A11 11 0 0 1 3 5.2a3.9 3.9 0 0 0 1.2 5.2c-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.3 3.5 3.1 3.9-.3.1-.7.1-1 .1-.3 0-.5 0-.8-.1a3.9 3.9 0 0 0 3.6 2.7A7.9 7.9 0 0 1 2 19.4 11.2 11.2 0 0 0 8.1 21c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.5 1.5-1.2 2.1-2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="kindergartenS9-box kindergartenS9-box4">
+                  <a
+                    class="kindergartenS9-social"
+                    href="#"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      class="kindergartenS9-svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.05h.05c.53-1 1.84-2.05 3.8-2.05 4.07 0 4.82 2.68 4.82 6.17V23h-4v-6.63c0-1.58-.03-3.62-2.2-3.62-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Teacher Info -->
+              <div class="kindergartenS9-teacher-info">
+                <h4 class="kindergartenS9-teacher-name">Brooklyn Simmons</h4>
+                <p class="kindergartenS9-teacher-title">Principal Teacher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== End kindergarten S9 3009 =================== -->
+      <!-- =================== Start kindergarten S10 3010 =================== -->
+      <section
+        class="kindergartenS10-section py-5"
+        aria-labelledby="kindergartenS10-heading"
+      >
+        <div class="kindergartenS10-bg js-kindergartenS10-reveal">
+          <div class="container">
+            <h2 id="kindergartenS10-heading" class="visually-hidden">
+              Join Our New Session
+            </h2>
+
+            <div class="row align-items-center g-4 justify-content-center">
+              <!-- Left - Phone Icon (XS: order-1, centered) -->
+              <div
+                class="col-lg-2 col-md-3 col-12 text-center order-1 order-md-1"
+              >
+                <div class="kindergartenS10-phone-icon">
+                  <img
+                    
+                    src="assets/img/kindergarten/ks10i1.png"
+                    alt="Call us icon"
+                    class="callusimg d-block mx-auto"
+                  >
+                </div>
+              </div>
+
+              <!-- Center - Call to Action (XS: order-2, centered) -->
+              <div
+                class="col-lg-8 col-md-6 col-12 text-center order-2 order-md-2"
+              >
+                <div class="kindergartenS10-content">
+                  <p class="kindergartenS10-subtitle mb-2">
+                    ✽
+                    <span
+                      class="kindergartenS11-eyebrow text-uppercase small fw-bold"
+                      >Our New Session</span
+                    >
+                    ✽
+                  </p>
+                  <h3 class="kindergartenS10-title mb-3">
+                    Join Our New Session
+                  </h3>
+                  <a
+                    href="#"
+                    class="btn btn-cta d-inline-flex align-items-center justify-content-center gap-2"
+                  >
+                    <span>Registration Now</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right - Jumping Child (XS: order-3, centered) -->
+              <div
+                class="col-lg-2 col-md-3 col-12 text-center order-3 order-md-3"
+              >
+                <div class="kindergartenS10-child">
+                  <img
+                    
+                    src="assets/img/kindergarten/ks10p2.png"
+                    alt="Happy jumping child"
+                    class="rightkidimg d-block mx-auto"
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Background Image -->
+            <div class="kindergartenS10-bg-img">
+              <img
+                
+                src="assets/img/kindergarten/ks10p1.jpg"
+                alt="Background"
+                class="img-fluid"
+              >
+            </div>
+
+            <!-- Ellipses -->
+            <div class="kindergartenS10-ellipses">
+              <img
+                
+                src="assets/img/kindergarten/ks10i2.png"
+                alt="Decorative ellipses"
+                class="img-fluid"
+              >
+            </div>
+
+            <div class="kindergartenS10-bottom-scallop"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== End kindergarten S10 3010 =================== -->
+      <!-- =================== Start kindergarten S11 3011 =================== -->
+      <div class="kindergartenS11-section py-60">
+        <div class="kindergartenS11-container">
+          <div class="text-center mb-4">
+            <p
+              class="kindergartenS11-eyebrow text-uppercase small fw-bold mb-1"
+            >
+              ✽ Latest News Posts ✽
+            </p>
+            <h2 class="kindergartenS11-titlem m-0">Our News & Article</h2>
+          </div>
+          <div class="kindergartenS11-grid">
+            <!-- Card 1 -->
+            <article class="kindergartenS11-card">
+              <a href="#" class="kindergartenS11-thumb">
+                <img
+                  
+                  src="assets/img/blog/blog1.png"
+                  alt="Post title"
+                >
+              </a>
+              <div class="kindergartenS11-body">
+                <div class="kindergartenS11-meta">
+                  <span class="kindergartenS11-meta-icon" aria-hidden="true">
+                    <!-- calendar icon -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="17"
+                        rx="3"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                      />
+                      <path d="M3 9H21" stroke="#ff6b5b" stroke-width="2" />
+                      <path
+                        d="M8 3V7M16 3V7"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="kindergartenS11-meta-text"
+                    >26. September 2025</span
+                  >
+                </div>
+
+                <h3 class="kindergartenS11-title">
+                  <a href="#"
+                    >Students Intelligence in Education Building Resilient</a
+                  >
+                </h3>
+
+                <p class="kindergartenS11-excerpt">
+                  Pre-School Has Open Door Andsoul Offer Free Trial Session in
+                  Child.
+                </p>
+              </div>
+              <a href="#" class="kindergartenS11-btn">Read More</a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="kindergartenS11-card">
+              <a href="#" class="kindergartenS11-thumb">
+                <img
+                  
+                  src="assets/img/blog/blog2.png"
+                  alt="Post title"
+                >
+              </a>
+              <div class="kindergartenS11-body">
+                <div class="kindergartenS11-meta">
+                  <span class="kindergartenS11-meta-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="17"
+                        rx="3"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                      />
+                      <path d="M3 9H21" stroke="#ff6b5b" stroke-width="2" />
+                      <path
+                        d="M8 3V7M16 3V7"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="kindergartenS11-meta-text"
+                    >26. September 2025</span
+                  >
+                </div>
+
+                <h3 class="kindergartenS11-title">
+                  <a href="#"
+                    >How to be Learn Map Glove Easy Way for Kindergarten</a
+                  >
+                </h3>
+
+                <p class="kindergartenS11-excerpt">
+                  Pre-School Has Open Door Andsoul Offer Free Trial Session in
+                  Child.
+                </p>
+              </div>
+              <a href="#" class="kindergartenS11-btn">Read More</a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="kindergartenS11-card">
+              <a href="#" class="kindergartenS11-thumb">
+                <img
+                  
+                  src="assets/img/blog/blog3.png"
+                  alt="Post title"
+                >
+              </a>
+              <div class="kindergartenS11-body">
+                <div class="kindergartenS11-meta">
+                  <span class="kindergartenS11-meta-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="17"
+                        rx="3"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                      />
+                      <path d="M3 9H21" stroke="#ff6b5b" stroke-width="2" />
+                      <path
+                        d="M8 3V7M16 3V7"
+                        stroke="#ff6b5b"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="kindergartenS11-meta-text"
+                    >26. September 2025</span
+                  >
+                </div>
+
+                <h3 class="kindergartenS11-title">
+                  <a href="#"
+                    >All Inclusive Ultimate Circle Island Day with Lunch</a
+                  >
+                </h3>
+
+                <p class="kindergartenS11-excerpt">
+                  Pre-School Has Open Door Andsoul Offer Free Trial Session in
+                  Child.
+                </p>
+              </div>
+              <a href="#" class="kindergartenS11-btn">Read More</a>
+            </article>
+          </div>
+          <img
+            class="kindergartenS11-overlay kindergartenS11-overlay--left"
+            src="assets/img/playLearn/pls11i1.png"
+            alt="kidora img"
+            aria-hidden="true"
+          >
+          <img
+            class="kindergartenS11-overlay kindergartenS11-overlay--right"
+            src="assets/img/playLearn/pls11i2.png"
+            alt="kidora img"
+            aria-hidden="true"
+          >
+        </div>
+      </div>
+      <!-- =================== End kindergarten S11 3011 =================== -->
+
+      <!-- =================== FOOTER =================== -->
+      <footer
+        class="footx position-relative text-white"
+        aria-label="Site footer"
+      >
+        <!-- scalloped top edge (big circles) -->
+        <div class="footx-scallop" aria-hidden="true"></div>
+        <!-- decorative imgs -->
+        <img
+          src="assets/img/ft-vic-1.png"
+          alt="kidora img"
+          class="footx-vic footx-vic--cloud"
+          aria-hidden="true"
+        >
+        <img
+          src="assets/img/ft-vic-2.png"
+          alt="kidora img"
+          class="footx-vic footx-vic--rainbow"
+          aria-hidden="true"
+        >
+
+        <div class="container position-relative">
+          <!-- newsletter -->
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+              <h2 class="footx-title fw-bold mb-4">
+                Don't Miss Awesome Story From Our Alumni
+              </h2>
+
+              <!-- input + button (button overlays on the right) -->
+              <div class="footx-subscribe-wrap mx-auto">
+                <img
+                  src="assets/img/ft-vic-3.png"
+                  alt="kidora img"
+                  class="footx-vic footx-vic--arrow"
+                  aria-hidden="true"
+                >
+                <form
+                  class="footx-subscribe"
+                  role="search"
+                  aria-label="newsletter"
+                >
+                  <input
+                    type="email"
+                    class="footx-input"
+                    placeholder="Enter Your mail"
+                    aria-label="Email address"
+                    name="email"
+                    autocomplete="email"
+                  >
+                  <button class="footx-btn" type="submit">
+                    Subscribe Now <i class="bi bi-arrow-up-right ms-1"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- content rows -->
+          <div class="row gy-4 gy-lg-0 mt-5 align-items-start">
+            <!-- brand / about -->
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <a href="index.html" aria-label="Kidora Logo Home">
+                  <img
+                    
+                    src="assets/img/Logo.png"
+                    alt="kidora img"
+                    class="flex-shrink-0"
+                  >
+                </a>
+              </div>
+              <p class="footx-muted mb-3 pe-lg-5">
+                Elusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum ultrice gravida isus commodo viverra.
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <span class="footx-muted">Follow us</span>
+                <a href="#" class="social-dot" aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="social-dot" aria-label="X"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+                <a href="#" class="social-dot" aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- quick links -->
+            <div class="col-6 col-lg-2">
+              <h6 class="text-white-50 mb-3">Quick links</h6>
+              <ul class="list-unstyled footx-list mb-0">
+                <li>
+                  <a href="#" class="footx-link"
+                    ><i class="bi bi-caret-right-fill me-1 text-salmon"></i
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footx-link"
+                    ><i class="bi bi-caret-right-fill me-1 text-salmon"></i
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footx-link"
+                    ><i class="bi bi-caret-right-fill me-1 text-salmon"></i
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footx-link"
+                    ><i class="bi bi-caret-right-fill me-1 text-salmon"></i>Help
+                    center</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footx-link"
+                    ><i class="bi bi-caret-right-fill me-1 text-salmon"></i
+                    >Become A Guide</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- address -->
+            <div class="col-6 col-lg-3">
+              <h6 class="text-white-50 mb-3">Address</h6>
+              <ul class="list-unstyled m-0">
+                <li class="d-flex gap-2 mb-3">
+                  <span class="social-dot"><i class="bi bi-geo-alt"></i></span>
+                  <span class="footx-muted">2464 Royal Ln. Mesa</span>
+                </li>
+                <li class="d-flex gap-2 mb-3">
+                  <span class="social-dot"
+                    ><i class="bi bi-telephone"></i
+                  ></span>
+                  <a class="footx-link" href="tel:+25854921583215"
+                    >+258 (549) 2158 3215</a
+                  >
+                </li>
+                <li class="d-flex gap-2">
+                  <span class="social-dot"><i class="bi bi-envelope"></i></span>
+                  <a class="footx-link" href="mailto:info@kidoraschool.com"
+                    >info@kidoraschool.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- instagram -->
+            <div class="col-lg-3">
+              <h6 class="text-white-50 mb-3">Instagram</h6>
+              <div class="row g-2">
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-1.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-2.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-3.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-4.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-5.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+                <div class="col-4">
+                  <a class="footx-igram" href="#"
+                    ><img
+                      
+                      src="assets/img/ft-6.png"
+                      class="img-fluid"
+                      alt="kidora img"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footx-hr my-4">
+        <div class="container">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small"
+          >
+            <span class="footx-muted"
+              >© 2025 Kidora . All Rights Reserved.</span
+            >
+            <div class="d-flex gap-3">
+              <a href="#" class="footx-link">Team of Service</a>
+              <a href="#" class="footx-link">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ================= END FOOTER ================== -->
+
+      <!-- ================= Start Scroll To Top ================== -->
+      <button id="scrollTopButton" class="kidora-scrolltop scrolltop-hide">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+      <!-- ================= END Scroll To Top ================== -->
+      <!-- ================= Start Magnet cursor ================== -->
+      <div class="magnet">
+        <div class="magnet-cursor"></div>
+        <div class="magnet-circle"></div>
+      </div>
+      <!-- ================= End Magnet cursor ================== -->
+    </div>
+    <!-- End Main Content -->
+    <!-- Bootstrap + Plugins JS -->
+    <script
+      src="assets/js/packages/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="assets/js/packages/lenis.min.js"
+      defer
+    ></script>
+    
+    <!-- Your custom JS -->
+    <script src="assets/js/active.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/footer.js" defer></script>
+    <script src="assets/js/kindergarten.js" defer></script>
+
+    
+  </body>
+</html>
